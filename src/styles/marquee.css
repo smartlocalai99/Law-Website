@@ -1,0 +1,41 @@
+/* ===========================
+   Premium Infinite Ticker
+=========================== */
+
+.ticker-wrapper {
+  display: flex;
+  width: max-content;
+  animation: ticker 28s linear infinite;
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ticker-track span {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 24px;
+  letter-spacing: 1px;
+}
+
+.divider {
+  color: #B79241 !important;
+  font-size: 22px !important;
+  margin: 0 10px !important;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
