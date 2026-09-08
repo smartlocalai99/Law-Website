@@ -104,7 +104,7 @@ export default function PracticeAreasSection() {
   return (
     <section
       id="practice-areas"
-      className="relative overflow-hidden bg-[#0B2030] py-20 sm:py-24 lg:py-14npm"
+      className="relative overflow-hidden bg-[#0A0A0A] py-20 sm:py-24 lg:py-14npm"
     >
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
@@ -154,14 +154,14 @@ export default function PracticeAreasSection() {
               return (
                 <article
                   key={area.title}
-                  className="group relative z-0 flex h-[235px] w-[280px] shrink-0 flex-col justify-between overflow-hidden rounded-[14px] border border-[#C5A45D]/20 bg-[#102B3D] p-6 transition-all duration-300 hover:z-40 hover:-translate-y-1 hover:border-[#C5A45D]/60 hover:bg-[#132F42]"
+                  className="group relative z-0 flex h-[235px] w-[280px] shrink-0 flex-col justify-between overflow-hidden rounded-[14px] border border-[#C5A45D]/20 bg-[#0A0A0A] p-6 transition-all duration-300 hover:z-40 hover:-translate-y-1 hover:border-[#C5A45D]/60 hover:bg-[#132F42]"
                 >
 
                   {/* Subtle Glow */}
                   <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#C5A45D]/[0.04] blur-2xl transition-all duration-500 group-hover:bg-[#C5A45D]/[0.09]" />
 
                   {/* Icon */}
-                  <div className="relative flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/30 bg-[#0B2030]">
+                  <div className="relative flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/30 bg-[black]">
                     <Icon
                       size={20}
                       strokeWidth={1.5}

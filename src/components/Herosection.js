@@ -1,26 +1,42 @@
+import { ArrowUpRight, Phone } from "lucide-react";
+
 export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-[#0B2030] pt-[72px]"
+      className="relative overflow-hidden bg-[#0A0A0A] pt-[72px]"
     >
-      {/* ================= BACKGROUND ================= */}
+      {/* =====================================================
+          BACKGROUND IMAGE
+      ===================================================== */}
 
-      <div className="absolute inset-0">
-        <div className="absolute -left-52 top-0 h-[700px] w-[700px] rounded-full bg-[#17384D]/30 blur-[160px]" />
+      <div className="pointer-events-none absolute inset-0">
 
-        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-[#C5A45D]/5 blur-[140px]" />
+        <img
+          src="/hero-law.jpg"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+
+        {/* Dark cinematic overlay */}
+        <div className="absolute inset-0 bg-black/70" />
+
+        {/* Left side darker for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/45" />
+
+        {/* Bottom darkness */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40" />
+
       </div>
 
 
-      <div className="relative mx-auto px-8 sm:px-10 lg:px-12 xl:px-16">
+      <div className="relative px-8 sm:px-10 lg:px-12 xl:px-16">
 
         {/* =====================================================
             HERO CONTENT
         ===================================================== */}
 
-        <div className="grid min-h-[calc(100vh-72px)] items-center gap-12 pb-[65px] pt-12 lg:grid-cols-2 lg:gap-16">
-
+        <div className="grid min-h-[calc(100vh-72px)] items-center gap-12 pb-[55px] pt-10 lg:grid-cols-2 lg:gap-16">
 
           {/* ==================================================
               LEFT CONTENT
@@ -28,26 +44,13 @@ export default function HeroSection() {
 
           <div className="relative z-10">
 
-            {/* Gold Accent */}
+            {/* FIRM NAME */}
 
-            <div className="mb-5 h-[2px] w-[60px] bg-[#C5A45D]" />
+            <div className="mb-8">
 
-
-            {/* ================= IDENTIFICATION ================= */}
-
-            <div className="flex items-center gap-3">
-
-              <span className="text-[10px] font-semibold uppercase tracking-[3px] text-[#C5A45D] sm:text-[11px]">
-                Yashwanth Ovarsu
-              </span>
-
-              <span className="text-[#C5A45D]">
-                ✦
-              </span>
-
-              <span className="text-[10px] font-medium uppercase tracking-[2.5px] text-[#B5C0C8] sm:text-[11px]">
-                Founding Advocate
-              </span>
+              <p className="falcon-title text-[11px] font-semibold uppercase tracking-[4px] text-[#C5A45D]">
+                Falcon Lex Legal
+              </p>
 
             </div>
 
@@ -56,150 +59,148 @@ export default function HeroSection() {
                 MAIN HEADING
             ================================================== */}
 
-            <h1 className="mt-7 font-serif text-[30px] leading-[1.03] tracking-[-1px] text-[#F5F1E8] sm:text-[58px] lg:text-[60px] xl:text-[50px]">
+            <h1 className="max-w-[720px] font-serif text-[48px] leading-[0.98] tracking-[-1.5px] text-[#F5F1E8] sm:text-[58px] lg:text-[64px] xl:text-[72px]">
 
-              Strategic
+              Strategic Legal
               <br />
 
-              Counsel.
+              Representation
               <br />
 
-              Strong
-              <br />
-
-              Representation.
+              <span className="text-[#C5A45D]">
+                With Purpose.
+              </span>
 
             </h1>
 
 
             {/* ==================================================
-                PROFESSIONAL TITLE
+                DESCRIPTION
             ================================================== */}
 
-            <p className="mt-7 text-[10px] font-semibold uppercase tracking-[2px] text-[#C5A45D] sm:text-[11px]">
+            <div className="mt-10 flex max-w-[820px]">
 
-              Criminal, Matrimonial & Real Estate Counsel
+              <div className="mr-7 w-[1px] shrink-0 bg-[#C5A45D]" />
 
-            </p>
+              <p className="max-w-[760px] text-[14px] leading-7 text-[#D0D0D0] sm:text-[15px]">
 
+                Thoughtful legal counsel, rigorous preparation and focused
+                representation across litigation, property, commercial and
+                dispute-related matters.
 
-            {/* ==================================================
-                SHORT INTRODUCTION
-            ================================================== */}
-
-            <p className="mt-6 text-[15px] leading-8 text-[#B8C2C9] sm:text-[16px]">
-
-              Yashwanth Ovarsu is the founding advocate of
-              Falcon Lex Legal, providing strategic legal
-              counsel, litigation and dispute resolution services.
-
-            </p>
-
-
-            {/* ==================================================
-                CTA
-            ================================================== */}
-
-            <div className="mt-8">
-
-              <a
-                href="#contact"
-                className="inline-flex h-12 items-center rounded-full bg-[#C5A45D] px-7 text-[10px] font-semibold uppercase tracking-[1.5px] text-[#102437] transition-all duration-300 hover:bg-[#D4B56B]"
-              >
-                Schedule a Consultation
-              </a>
+              </p>
 
             </div>
 
 
             {/* ==================================================
-                LOCATION
+                ADVOCATE NAMES
             ================================================== */}
 
-            <div className="mt-8 flex items-center gap-3 text-[10px] uppercase tracking-[1.8px] text-[#8E9EA8]">
+            <div className="mt-10 flex items-center">
 
-              <span className="text-[#C5A45D]">
-                ●
-              </span>
+              {/* Yashwanth */}
 
-              <span>
-                Bengaluru, Karnataka
-              </span>
+              <div className="group pr-10">
 
-            </div>
-
-          </div>
-
-
-          {/* ==================================================
-              RIGHT SIDE IMAGE
-          ================================================== */}
-
-          <div className="relative flex items-center justify-center lg:justify-end">
-
-            {/* Decorative Corner */}
-
-            <div className="absolute right-0 top-[-25px] hidden h-[85px] w-[85px] border-r border-t border-[#C5A45D] lg:block" />
-
-
-            {/* Image Container */}
-
-            <div className="relative w-full">
-
-              {/* Offset Gold Border */}
-
-              <div className="absolute inset-0 translate-x-5 translate-y-5 border border-[#C5A45D]/40" />
-
-
-              {/* Main Image */}
-
-              <div className="relative overflow-hidden">
-
-                <img
-                  src="/yashwanth.png"
-                  alt="Yashwanth Ovarsu - Founding Advocate"
-                  className="relative z-10 block h-[300px] w-full object-cover object-top sm:h-[320px] lg:h-[400px] xl:h-[640px]"
-                />
-
-
-                {/* Image Overlay */}
-
-                <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#071722]/50 via-transparent to-transparent" />
-
-              </div>
-
-
-              {/* Lawyer Name Plate */}
-
-              <div className="absolute bottom-0 left-0 z-30 bg-[#0B2030] px-6 py-4">
-
-                <p className="text-[11px] font-semibold uppercase tracking-[2px] text-[#C5A45D]">
+                <p className="font-serif text-[22px] leading-none text-[#F5F1E8] transition-colors duration-300 group-hover:text-[#C5A45D]">
                   Yashwanth Ovarsu
                 </p>
 
-                <p className="mt-1 text-[9px] uppercase tracking-[1.5px] text-[#A6B3BC]">
+                <p className="mt-3 text-[9px] font-medium uppercase tracking-[2px] text-[#C5A45D]">
                   Founding Advocate
                 </p>
 
               </div>
 
+
+              {/* Divider */}
+
+              <div className="h-[54px] w-px bg-white/20" />
+
+
+              {/* Krishna */}
+
+              <div className="group pl-10">
+
+                <p className="font-serif text-[22px] leading-none text-[#F5F1E8] transition-colors duration-300 group-hover:text-[#C5A45D]">
+                  Kishan Shetty S.R
+                </p>
+
+                <p className="mt-3 text-[9px] font-medium uppercase tracking-[2px] text-[#C5A45D]">
+                  Advocate
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* ==================================================
+                CTA BUTTONS
+            ================================================== */}
+
+            <div className="mt-10 flex flex-wrap items-center gap-5">
+
+              {/* Schedule Consultation */}
+
+              <a
+                href="#contact"
+                className="group inline-flex h-[61px] items-center gap-7 bg-[#C5A45D] px-8 text-[10px] font-semibold uppercase tracking-[2px] text-[#0A0A0A] transition-all duration-300 hover:bg-[#D4B56B]"
+              >
+
+                <span>
+                  Schedule a Consultation
+                </span>
+
+                <span className="flex h-7 w-7 items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
+
+                  <ArrowUpRight
+                    size={18}
+                    strokeWidth={1.7}
+                  />
+
+                </span>
+
+              </a>
+
+
+              {/* Call Us */}
+
+              <a
+                href="tel:+919XXXXXXXXX"
+                className="group inline-flex h-[61px] items-center gap-4 border border-white/25 px-8 text-[10px] font-semibold uppercase tracking-[2px] text-[#F5F1E8] transition-all duration-300 hover:border-[#C5A45D] hover:text-[#C5A45D]"
+              >
+
+                <Phone
+                  size={18}
+                  strokeWidth={1.5}
+                />
+
+                <span>
+                  Call Us
+                </span>
+
+              </a>
+
             </div>
 
           </div>
+
+
+          <div className="relative hidden lg:block" />
 
         </div>
 
 
         {/* =====================================================
-            BOTTOM MOVING STRIP
-            DO NOT REMOVE
+            BOTTOM TICKER
+            KEPT EXACTLY AS PROVIDED
         ===================================================== */}
 
-        <div className="absolute bottom-0 left-0 h-[40px] w-full overflow-hidden  bg-[#0B2030]">
+        <div className="absolute bottom-0 left-0 h-[40px] w-full overflow-hidden border-t border-white/10 bg-[#111111]">
 
           <div className="ticker-wrapper">
-
-            {/* Track 1 */}
 
             <div className="ticker-track">
 
@@ -232,8 +233,6 @@ export default function HeroSection() {
 
             </div>
 
-
-            {/* Track 2 */}
 
             <div className="ticker-track">
 
@@ -271,6 +270,8 @@ export default function HeroSection() {
         </div>
 
       </div>
+
+
     </section>
   );
 }
