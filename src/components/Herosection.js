@@ -15,20 +15,19 @@ export default function HeroSection() {
         <img
           src="/hero-law.jpg"
           alt=""
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className="absolute inset-0 h-half w-full object-cover object-center"
         />
 
         {/* Dark cinematic overlay */}
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/30"/>
 
         {/* Left side darker for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/65 to-black/45" />
 
         {/* Bottom darkness */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
 
       </div>
-
 
       <div className="relative px-8 sm:px-10 lg:px-12 xl:px-16">
 
@@ -46,13 +45,13 @@ export default function HeroSection() {
 
             {/* FIRM NAME */}
 
-            <div className="mb-8">
+            {/* <div className="mb-8">
 
               <p className="falcon-title text-[11px] font-semibold uppercase tracking-[4px] text-[#C5A45D]">
                 Falcon Lex Legal
               </p>
 
-            </div>
+            </div> */}
 
 
             {/* ==================================================

@@ -10,19 +10,6 @@ const practiceAreas = [
   "Legal Advisory & Opinions",
 ];
 
-const courts = [
-  "High Court of Karnataka",
-  "City Civil Courts",
-  "Commercial Courts",
-  "Family Courts",
-  "Magistrate Courts",
-  "District & Sessions Courts",
-  "Karnataka Real Estate Regulatory Authority (K-RERA)",
-  "Karnataka Real Estate Appellate Tribunal (KREAT)",
-  "Debt Recovery Tribunal (DRT)",
-  "Other Trial Courts across Karnataka",
-];
-
 const navLinks = [
   { title: "Home", href: "/" },
   { title: "About", href: "/#about" },
@@ -122,47 +109,16 @@ export default function Header() {
 
           {/* COURTS */}
 
-          <li className="group relative">
+          {/* COURTS */}
 
-            <a
-              href="/#courts"
-              className="flex items-center gap-1 text-[11px] font-medium text-[#C2CBD2] transition-colors duration-300 hover:text-[#C5A45D]"
-            >
-              Courts
-              <span className="text-[9px]">▾</span>
-            </a>
-
-            {/* Dropdown */}
-
-            <div className="invisible absolute right-0 top-full w-[350px] translate-y-3 pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-
-              <div className="bg-[#0A0A0A] p-7 shadow-2xl">
-
-                <p className="mb-5 text-[10px] font-semibold uppercase tracking-[2px] text-[#C5A45D]">
-                  Courts & Forums
-                </p>
-
-                <ul className="space-y-3">
-
-                  {courts.map((court) => (
-                    <li key={court}>
-                      <a
-                        href="/#courts"
-                        className="block text-[10px] leading-5 text-[#C2CBD2] transition-colors duration-300 hover:text-white"
-                      >
-                        {court}
-                      </a>
-                    </li>
-                  ))}
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </li>
-
+<li>
+  <a
+    href="/#courts"
+    className="text-[11px] font-medium text-[#C2CBD2] transition-colors duration-300 hover:text-[#C5A45D]"
+  >
+    Courts
+  </a>
+</li>
           {/* CONTACT */}
 
           <li>
