@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 export default function AboutSection() {
@@ -41,11 +42,10 @@ export default function AboutSection() {
               className="absolute bottom-[-12px] right-[4%] h-full w-[88%] border border-[#C5A45D] sm:right-[7%] lg:right-[8%]"
             />
 
+
             {/* Image */}
 
-            <div
-              className="relative z-10 overflow-hidden bg-white"
-            >
+            <div className="relative z-10 overflow-hidden bg-white">
 
               <img
                 src="/falcon-lex-legal.png"
@@ -66,18 +66,14 @@ export default function AboutSection() {
 
             {/* Section Label */}
 
-            <p
-              className="text-[10px] font-semibold uppercase tracking-[3px] text-[#C5A45D]"
-            >
+            <p className="text-[10px] font-semibold uppercase tracking-[3px] text-[#C5A45D]">
               About Falcon Lex Legal
             </p>
 
 
             {/* Main Heading */}
 
-            <h2
-              className="mt-4 font-serif text-4xl leading-[1.08] tracking-[-0.5px] text-[#111111] sm:text-5xl"
-            >
+            <h2 className="mt-4 font-serif text-4xl leading-[1.08] tracking-[-0.5px] text-[#111111] sm:text-5xl">
               A considered approach
               <br />
               to legal practice.
@@ -91,9 +87,7 @@ export default function AboutSection() {
 
             {/* Main Description */}
 
-            <p
-             className="mt-6 text-sm leading-7 text-[#111111] sm:text-[15px]"
-            >
+            <p className="mt-6 text-sm leading-7 text-[#111111] sm:text-[15px]">
               Falcon Lex Legal is a Bengaluru-based law firm focused on
               thoughtful legal counsel, strategic representation and
               effective advocacy.
@@ -102,9 +96,7 @@ export default function AboutSection() {
 
             {/* Supporting Description */}
 
-            <p
-              className="mt-4 text-sm leading-7 text-[#111111] sm:text-[15px]"
-            >
+            <p className="mt-4 text-sm leading-7 text-[#111111] sm:text-[15px]">
               The firm approaches each matter with careful preparation,
               sound legal analysis and a clear understanding of the
               client's objectives.
@@ -115,8 +107,8 @@ export default function AboutSection() {
                 MORE ABOUT BUTTON
             ================================================== */}
 
-            <a
-              href="#more-about-falcon-lex-legal"
+            <Link
+              href="/about"
               className="group mt-7 inline-flex items-center gap-3 border border-[#111111] bg-[#111111] px-5 py-3 text-[10px] font-semibold uppercase tracking-[1.5px] text-white transition-all duration-300 hover:bg-white hover:text-[#111111]"
             >
 
@@ -124,16 +116,13 @@ export default function AboutSection() {
                 More About Us
               </span>
 
-
-              {/* Lucide Symbol Icon */}
-
               <ArrowUpRight
                 size={16}
                 strokeWidth={1.6}
                 className="text-[#C5A45D] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
 
-            </a>
+            </Link>
 
           </div>
 

@@ -72,29 +72,6 @@ export default function FAQSection() {
               beginning a consultation with Falcon Lex Legal.
             </p>
 
-            {/* CONTACT BOX */}
-
-            <div className="mt-10 flex  items-center justify-between bg-[#F1F1ED] px-5 py-5 sm:px-6">
-
-              <div>
-                <p className="font-serif text-[13px] text-[#111111]">
-                  Still have questions?
-                </p>
-
-                <p className="mt-1 text-[9px] leading-4 text-[#111111]/55">
-                  We're here to help you.
-                </p>
-              </div>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center bg-[#111111] px-4 py-3 text-[8px] font-semibold uppercase tracking-[1px] text-white transition-all duration-300 hover:bg-[#C5A45D]"
-              >
-                Contact Us
-              </a>
-
-            </div>
-
           </div>
 
 
