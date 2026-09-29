@@ -1,10 +1,9 @@
+import Link from "next/link";
 import {
   ArrowRight,
   Building2,
   BriefcaseBusiness,
-  FileCheck2,
   FileText,
-  Gavel,
   Handshake,
   Home,
   Landmark,
@@ -19,110 +18,93 @@ const practiceAreas = [
     description:
       "Representation in civil disputes, recovery matters and related court proceedings.",
     icon: Scale,
+    image: "civil-litigation.jpg",
+    slug: "civil-litigation",
   },
   {
     title: "Criminal Litigation",
     description:
       "Legal representation in criminal matters, defence proceedings and related cases.",
     icon: Shield,
+    image: "criminal-litigation.jpg",
+    slug: "criminal-litigation",
   },
   {
     title: "Real Estate & Property Law",
     description:
-      "Legal assistance relating to property transactions, disputes and documentation.",
+      "Legal assistance relating to property transactions, ownership, disputes and documentation.",
     icon: Home,
+    image: "real-estate.jpg",
+    slug: "real-estate-property-law",
   },
   {
     title: "RERA Litigation",
     description:
       "Representation in disputes and proceedings arising under RERA.",
     icon: Building2,
+    image: "rera-litigation.jpg",
+    slug: "rera-litigation",
   },
   {
     title: "Commercial Litigation",
     description:
       "Legal representation in business, commercial and contractual disputes.",
     icon: BriefcaseBusiness,
+    image: "commercial-litigation.jpg",
+    slug: "commercial-litigation",
   },
   {
     title: "Banking & SARFAESI",
     description:
-      "Representation in banking disputes and SARFAESI-related proceedings.",
+      "Representation in banking disputes, recovery matters and SARFAESI-related proceedings.",
     icon: Landmark,
+    image: "banking-sarfaesi.jpg",
+    slug: "banking-sarfaesi",
   },
   {
     title: "Family & Matrimonial Law",
     description:
       "Legal assistance in matrimonial, family and related disputes.",
     icon: Users,
-  },
-  {
-    title: "Property Due Diligence",
-    description:
-      "Legal examination of property records, documents and potential issues.",
-    icon: FileCheck2,
-  },
-  {
-    title: "Title Verification",
-    description:
-      "Review and verification of property title and ownership documents.",
-    icon: FileText,
-  },
-  {
-    title: "Conveyancing",
-    description:
-      "Legal assistance with property documentation and conveyancing matters.",
-    icon: Home,
+    image: "family-matrimonial.jpg",
+    slug: "family-matrimonial-law",
   },
   {
     title: "Contract Drafting",
     description:
       "Preparation and review of contracts, agreements and legal documents.",
     icon: FileText,
+    image: "contract-drafting.jpg",
+    slug: "contract-drafting",
   },
   {
     title: "Arbitration & Mediation",
     description:
       "Representation and assistance in alternative dispute resolution matters.",
     icon: Handshake,
-  },
-  {
-    title: "Recovery Proceedings",
-    description:
-      "Legal representation in recovery claims and related proceedings.",
-    icon: Gavel,
+    image: "arbitration-mediation.jpg",
+    slug: "arbitration-mediation",
   },
   {
     title: "Legal Advisory",
     description:
       "Strategic legal advice tailored to individual and business requirements.",
     icon: BriefcaseBusiness,
+    image: "legal-advisory.jpg",
+    slug: "legal-advisory",
   },
 ];
 
-export default function PracticeAreasSection() {
+export default function Practiceareas() {
   return (
     <section
       id="practice-areas"
-      className="relative overflow-hidden bg-[#0A0A0A] py-20 sm:py-24 lg:py-14npm"
+      className="relative overflow-hidden bg-[#080808] py-16 sm:py-20 lg:py-13"
     >
-      {/* Background */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-180px] top-[-150px] h-[450px] w-[450px] rounded-full bg-[#17384D]/30 blur-[140px]" />
-
-        <div className="absolute bottom-[-180px] right-[-120px] h-[450px] w-[450px] rounded-full bg-[#C5A45D]/[0.05] blur-[140px]" />
-      </div>
-
-      <div className="relative px-8 sm:px-10 lg:px-12 xl:px-10">
-
-        {/* =====================================================
-            SECTION HEADER
-        ===================================================== */}
-
-        <div className="flex items-end justify-between gap-6 -mt-10">
-
+      <div className="mx-auto max-w-[1400px] px-5 sm:px-10 lg:px-12 xl:px-16">
+        {/* HEADER */}
+        <div className="flex items-end justify-between gap-6">
           <div>
-
             <p className="text-[10px] font-semibold uppercase tracking-[3px] text-[#C5A45D]">
               Legal Services
             </p>
@@ -131,78 +113,95 @@ export default function PracticeAreasSection() {
               Practice Areas
             </h2>
 
-            <p className="mt-5 text-sm leading-7 text-[#AEBBC3] sm:text-base">
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-[#AAB7BF] sm:text-base">
               Legal representation and advisory services across a range of
               civil, criminal, property, commercial and family matters.
             </p>
           </div>
 
+          {/* VIEW ALL BUTTON */}
+          <Link
+            href="/practice-areas"
+            className="group mb-2 hidden shrink-0 items-center gap-3 rounded-full border border-[#C5A45D]/40 px-5 py-3 text-[10px] font-semibold uppercase tracking-[2px] text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D]/10 hover:text-[#F5F1E8] sm:inline-flex"
+          >
+            View All Practice Areas
+            <ArrowRight
+              size={16}
+              strokeWidth={1.5}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </Link>
         </div>
 
+        {/* MOBILE VIEW ALL */}
+        <div className="mt-5 sm:hidden">
+          <Link
+            href="/practice-areas"
+            className="group inline-flex items-center gap-3 rounded-full border border-[#C5A45D]/40 px-4 py-2.5 text-[9px] font-semibold uppercase tracking-[2px] text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D]/10 hover:text-[#F5F1E8]"
+          >
+            View All Practice Areas
+            <ArrowRight
+              size={15}
+              strokeWidth={1.5}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </Link>
+        </div>
 
-        {/* =====================================================
-            HORIZONTAL PRACTICE AREA CARDS
-        ===================================================== */}
-
-        <div className="mt-6 pt-6 -mx-5 overflow-x-auto px-8 pb-5 sm:-mx-10 sm:px-10 lg:-mx-12 lg:px-12 xl:-mx-16 xl:px-16 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-
+        {/* CARDS */}
+        <div className="mt-8 -mx-5 overflow-x-auto px-5 pb-5 sm:-mx-10 sm:px-10 lg:-mx-12 lg:px-12 xl:-mx-16 xl:px-16 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex w-max gap-4">
-
             {practiceAreas.map((area) => {
               const Icon = area.icon;
 
               return (
-                <article
+                <Link
                   key={area.title}
-                  className="group relative z-0 flex h-[235px] w-[280px] shrink-0 flex-col justify-between overflow-hidden rounded-[14px] border border-[#C5A45D]/20 bg-[#0A0A0A] p-6 transition-all duration-300 hover:z-40 hover:-translate-y-1 hover:border-[#C5A45D]/60 hover:bg-[#132F42]"
+                  href={`/practice-areas/${area.slug}`}
+                  className="block shrink-0"
                 >
+                  <article className="group relative flex h-[320px] w-[280px] flex-col overflow-hidden rounded-[14px] border border-[#C5A45D]/25 bg-[#0A0A0A] transition-all duration-300 hover:-translate-y-1 hover:border-[#C5A45D]/70">
+                    {/* IMAGE */}
+                    <div className="relative h-[155px] w-full shrink-0 overflow-hidden">
+                      <img
+                        src={area.image}
+                        alt={area.title}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
 
-                  {/* Subtle Glow */}
-                  <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#C5A45D]/[0.04] blur-2xl transition-all duration-500 group-hover:bg-[#C5A45D]/[0.09]" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/90 via-[#0A0A0A]/20 to-transparent" />
+                    </div>
 
-                  {/* Icon */}
-                  <div className="relative flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/30 bg-[black]">
-                    <Icon
-                      size={20}
-                      strokeWidth={1.5}
-                      className="text-[#C5A45D]"
-                    />
-                  </div>
+                    {/* ICON */}
+                    <div className="absolute left-6 top-[128px] z-10 flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/40 bg-[#0A0A0A]">
+                      <Icon
+                        size={20}
+                        strokeWidth={1.5}
+                        className="text-[#C5A45D]"
+                      />
+                    </div>
 
+                    {/* CONTENT */}
+                    <div className="relative flex flex-1 flex-col justify-between px-6 pb-5 pt-6">
+                      <div>
+                        <h3 className="font-serif text-[22px] leading-tight text-[#F5F1E8]">
+                          {area.title}
+                        </h3>
 
-                  {/* Content */}
-                  <div className="relative">
+                        <p className="mt-4 max-w-[220px] text-[12px] leading-5 text-[#AAB7BF]">
+                          {area.description}
+                        </p>
+                      </div>
 
-                    <h3 className="font-serif text-[22px] leading-tight text-[#F5F1E8]">
-                      {area.title}
-                    </h3>
-
-                    <p className="mt-3 text-[12px] leading-5 text-[#AAB7BF]">
-                      {area.description}
-                    </p>
-
-                  </div>
-
-
-                  {/* Arrow */}
-                  <a
-  href="#contact"
-  aria-label={`Learn more about ${area.title}`}
-  className="absolute bottom-5 right-5 flex items-center justify-center text-[#C5A45D] transition-transform duration-300 group-hover:translate-x-1"
->
-  <ArrowRight
-    size={20}
-    strokeWidth={1.6}
-  />
-</a>
-                </article>
+                    
+                      
+                    </div>
+                  </article>
+                </Link>
               );
             })}
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

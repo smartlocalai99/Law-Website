@@ -107,7 +107,7 @@ export default function HeroSection() {
                 </p>
 
                 <p className="mt-3 text-[9px] font-medium uppercase tracking-[2px] text-[#C5A45D]">
-                  Founding Advocate
+                  Advocate
                 </p>
 
               </div>

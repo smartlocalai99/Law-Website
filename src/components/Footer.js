@@ -1,10 +1,14 @@
 import {
-  ArrowUpRight,
-  Mail,
-  MapPin,
-  Phone,
-  Scale,
-} from "lucide-react";
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaScaleBalanced,
+  FaLocationDot,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa6";
+
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -26,9 +30,8 @@ export default function Footer() {
 
             <div className="flex items-center gap-2">
 
-              <Scale
+              <FaScaleBalanced
                 size={22}
-                strokeWidth={1.5}
                 className="text-[#C5A45D]"
               />
 
@@ -49,31 +52,31 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-2">
 
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[10px] font-semibold text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
-              >
-                in
-              </a>
+  <a
+    href="#"
+    aria-label="Facebook"
+    className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
+  >
+    <FaFacebookF size={12} />
+  </a>
 
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[10px] font-semibold text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
-              >
-                ig
-              </a>
+  <a
+    href="#"
+    aria-label="Instagram"
+    className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
+  >
+    <FaInstagram size={13} />
+  </a>
 
-              <a
-                href="#contact"
-                aria-label="Contact"
-                className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[10px] font-semibold text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
-              >
-                @
-              </a>
+  <a
+    href="#"
+    aria-label="LinkedIn"
+    className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
+  >
+    <FaLinkedinIn size={12} />
+  </a>
 
-            </div>
+</div>
 
           </div>
 
@@ -125,12 +128,7 @@ export default function Footer() {
                 FAQs
               </a>
 
-              <a
-                href="#contact"
-                className="w-fit text-[10px] text-[#999999] transition-colors duration-300 hover:text-[#C5A45D]"
-              >
-                Contact
-              </a>
+            
 
             </div>
 
@@ -154,9 +152,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
 
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center border border-[#C5A45D]/40">
-                  <MapPin
+                  <FaLocationDot
                     size={13}
-                    strokeWidth={1.5}
                     className="text-[#C5A45D]"
                   />
                 </div>
@@ -174,9 +171,8 @@ export default function Footer() {
               <div className="flex items-center gap-3">
 
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center border border-[#C5A45D]/40">
-                  <Phone
+                  <FaPhone
                     size={13}
-                    strokeWidth={1.5}
                     className="text-[#C5A45D]"
                   />
                 </div>
@@ -196,9 +192,8 @@ export default function Footer() {
               <div className="flex items-center gap-3">
 
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center border border-[#C5A45D]/40">
-                  <Mail
+                  <FaEnvelope
                     size={13}
-                    strokeWidth={1.5}
                     className="text-[#C5A45D]"
                   />
                 </div>
@@ -242,9 +237,8 @@ export default function Footer() {
                 Schedule a Consultation
               </span>
 
-              <ArrowUpRight
+              <FiArrowUpRight
                 size={13}
-                strokeWidth={1.6}
                 className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
 

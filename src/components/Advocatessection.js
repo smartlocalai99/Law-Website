@@ -1,10 +1,10 @@
 const advocates = [
   {
     name: "Yashwanth Ovarsu",
-    designation: "Founding Advocate",
+    designation: "Advocate",
     image: "/yashwanth.png",
     description:
-      "Founding advocate of Falcon Lex Legal, with a practice focused on litigation, dispute resolution and strategic legal representation.",
+      "Advocate of Falcon Lex Legal, with a practice focused on litigation, dispute resolution and strategic legal representation.",
     href: "/advocates/yashwanth-ovarsu",
   },
   {

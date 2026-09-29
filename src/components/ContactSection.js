@@ -13,6 +13,7 @@ export default function ContactSection() {
       className="bg-white py-16 sm:py-20 lg:py-24"
     >
       <div className="px-6 sm:px-10 lg:px-16">
+
         {/* Heading */}
         <div className="text-center">
           <p className="text-[10px] font-semibold uppercase tracking-[3px] text-[#8B6B32]">
@@ -27,7 +28,7 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Details */}
-        <div className="mx-auto mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
 
           {/* Phone */}
           <a
@@ -85,7 +86,7 @@ export default function ContactSection() {
             </p>
           </a>
 
-          {/* Office - Google Maps Directions */}
+          {/* Office */}
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=Plazzo+Retail+Mall%2C+Commercial+Street%2C+Bengaluru+560001"
             target="_blank"
@@ -115,20 +116,31 @@ export default function ContactSection() {
             </span>
           </a>
 
+          {/* Office Hours — beside Location */}
+          <div className="flex flex-col items-center text-center">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32]">
+              <FaClock size={14} />
+            </div>
+
+            <h3 className="mt-4 text-[11px] font-semibold uppercase tracking-[1.5px] text-[#111111]">
+              Office Hours
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-[#666666]">
+              Monday – Saturday
+              <br />
+              10:00 AM – 8:00 PM
+            </p>
+
+            <span className="mt-2 text-[9px] font-semibold uppercase tracking-[1px] text-[#C5A45D]">
+              By Prior Appointment
+            </span>
+
+          </div>
+
         </div>
 
-        {/* Office Hours */}
-        <div className="mt-12 flex items-center justify-center gap-3 border-t border-[#E8E3D8] pt-8">
-          <FaClock
-            className="text-[#8B6B32]"
-            size={14}
-          />
-
-          <p className="text-xs tracking-wide text-[#666666]">
-            Monday – Saturday&nbsp;&nbsp; | &nbsp;&nbsp;10:00 AM – 8:00 PM
-            &nbsp;&nbsp; | &nbsp;&nbsp;Consultations by prior appointment
-          </p>
-        </div>
       </div>
     </section>
   );

@@ -16,6 +16,14 @@ import {
 } from "react-icons/fa";
 
 export default function KishanProfile() {
+  const languages = [
+    "English",
+    "Kannada",
+    "Hindi",
+    "Telugu",
+    "Tamil",
+  ];
+
   return (
     <>
       <Header />
@@ -26,62 +34,54 @@ export default function KishanProfile() {
             HERO
         ===================================================== */}
 
-        <section className="relative overflow-hidden bg-white">
+        <section className="relative overflow-hidden bg-[#111111] text-white">
 
-          <div className="mx-auto max-w-7xl px-6 pt-6 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
 
-            {/* Top Line */}
-
-            <div className="h-[1px] w-full bg-black/10" />
+            <div className="h-[1px] w-full bg-white/10" />
 
             <div className="grid min-h-[620px] lg:grid-cols-[48%_52%]">
 
               {/* =================================================
-                  LEFT CONTENT
+                  LEFT — PROFILE DETAILS
               ================================================= */}
 
-              <div className="flex flex-col justify-center py-14 lg:py-20">
+              <div className="flex flex-col justify-center py-16 lg:py-20">
 
-                <p className="text-[10px] font-semibold uppercase tracking-[2.5px] text-[#777777]">
+                <p className="text-[10px] font-semibold uppercase tracking-[2.5px] text-[#B08D57]">
                   Advocate
                 </p>
 
-                {/* Name */}
-
-                <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[1] tracking-[-1.5px] text-[#111111] sm:text-6xl lg:text-7xl">
+                <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[1] tracking-[-1.5px] text-white sm:text-6xl lg:text-7xl">
                   Kishan
                   <br />
-                  <span className="italic">
+                  <span className="italic text-[#D6D6D6]">
                     Shetty S.R.
                   </span>
                 </h1>
 
-                {/* Qualification */}
-
-                <p className="mt-4 text-[9px] font-semibold uppercase tracking-[2px] text-[#555555]">
+                <p className="mt-5 text-[9px] font-semibold uppercase tracking-[2px] text-[#B08D57]">
                   B.A., LL.B.
                 </p>
 
-                {/* Professional Title */}
-
-                <p className="mt-4 max-w-lg text-sm font-medium leading-6 text-[#333333] sm:text-base">
+                <p className="mt-4 max-w-lg text-sm font-medium leading-6 text-[#E5E5E5] sm:text-base">
                   Advocate | Real Estate &amp; Dispute Resolution Counsel
                 </p>
 
-                {/* Introduction */}
-
-                <p className="mt-6 max-w-lg text-sm leading-7 text-[#666666] sm:text-[15px]">
+                <p className="mt-6 max-w-lg text-sm leading-7 text-[#BDBDBD] sm:text-[15px]">
                   Advocate Kishan Shetty S.R. is a litigation and real estate
                   lawyer based in Bengaluru with experience representing
                   individuals, corporates, developers, financial institutions
                   and businesses across Karnataka.
                 </p>
 
+                <div className="mt-8 h-[2px] w-[42px] bg-[#B08D57]" />
+
               </div>
 
 
               {/* =================================================
-                  PHOTO
+                  RIGHT — IMAGE
               ================================================= */}
 
               <div className="relative min-h-[500px] overflow-hidden lg:min-h-[620px]">
@@ -92,11 +92,7 @@ export default function KishanProfile() {
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />
 
-                {/* Very subtle overlay */}
-
-                <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent" />
-
-                {/* Small Gold Accent */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/35 via-transparent to-transparent" />
 
                 <div className="absolute bottom-0 left-0 h-[3px] w-full bg-[#B08D57]" />
 
@@ -110,112 +106,179 @@ export default function KishanProfile() {
 
 
         {/* =====================================================
-            ACHIEVEMENTS
+            ACHIEVEMENTS + LANGUAGES
         ===================================================== */}
 
-        <section className="border-y border-black/10 bg-white">
+        <section className="border-b border-black/10 bg-white">
 
-          <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-7xl px-6 py-14 sm:px-10 lg:px-16">
 
-            {/* Section Heading */}
+            <div className="grid items-start gap-14 lg:grid-cols-[60%_40%]">
 
-            <div className="mb-7">
+              {/* =================================================
+                  LEFT — ACHIEVEMENTS
+              ================================================= */}
 
-              <div className="mb-3 h-[2px] w-[30px] bg-[#B08D57]" />
+              <div>
 
-              <p className="text-[8px] font-semibold uppercase tracking-[2.5px] text-[#777777]">
-                Achievements
-              </p>
+                <div className="mb-6">
 
-              <h2 className="mt-1 font-serif text-2xl text-[#111111] sm:text-3xl">
-                Professional Achievements
-              </h2>
+                  <div className="mb-3 h-[2px] w-[30px] bg-[#B08D57]" />
 
-            </div>
+                  <p className="text-[8px] font-semibold uppercase tracking-[2.5px] text-[#777777]">
+                    Achievements
+                  </p>
 
+                  <h2 className="mt-1 font-serif text-2xl leading-tight text-[#111111] sm:text-3xl">
+                    Professional Achievements
+                  </h2>
 
-            {/* =================================================
-                FOUR ACHIEVEMENTS — SINGLE ROW
-            ================================================= */}
-
-            <div className="grid grid-cols-4 border border-black/10">
-
-              {/* ACHIEVEMENT 1 */}
-
-              <div className="border-r border-black/10 px-4 py-5 text-center sm:px-5">
-
-                <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
-                  <FaBalanceScale className="text-sm" />
                 </div>
 
-                <h3 className="font-serif text-base text-[#111111] sm:text-lg">
-                  Favourable Orders
-                </h3>
 
-                <p className="mt-1.5 text-[10px] leading-4 text-[#666666]">
-                  Secured favourable judgments, interim orders, stays,
-                  injunctions and bail orders.
-                </p>
+                {/* Achievement Strips */}
+
+                <div className="space-y-1">
+
+                  {/* Favourable Orders */}
+
+                  <div className="group flex items-center gap-4 px-1 py-3.5 transition-colors duration-200 hover:bg-[#fafafa]">
+
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
+                      <FaBalanceScale className="text-xs" />
+                    </div>
+
+                    <div>
+
+                      <h3 className="font-serif text-[15px] leading-tight text-[#111111] sm:text-base">
+                        Favourable Orders
+                      </h3>
+
+                      <p className="mt-1 text-[10px] leading-4 text-[#666666] sm:text-[11px]">
+                        Secured favourable judgments, interim orders, stays,
+                        injunctions and bail orders.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Real Estate */}
+
+                  <div className="group flex items-center gap-4 px-1 py-3.5 transition-colors duration-200 hover:bg-[#fafafa]">
+
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
+                      <FaBuilding className="text-xs" />
+                    </div>
+
+                    <div>
+
+                      <h3 className="font-serif text-[15px] leading-tight text-[#111111] sm:text-base">
+                        Real Estate
+                      </h3>
+
+                      <p className="mt-1 text-[10px] leading-4 text-[#666666] sm:text-[11px]">
+                        Represented leading real estate developers and
+                        corporate clients in complex matters.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Property Expertise */}
+
+                  <div className="group flex items-center gap-4 px-1 py-3.5 transition-colors duration-200 hover:bg-[#fafafa]">
+
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
+                      <FaHome className="text-xs" />
+                    </div>
+
+                    <div>
+
+                      <h3 className="font-serif text-[15px] leading-tight text-[#111111] sm:text-base">
+                        Property Expertise
+                      </h3>
+
+                      <p className="mt-1 text-[10px] leading-4 text-[#666666] sm:text-[11px]">
+                        Experience in high-value real estate transactions,
+                        title due diligence and RERA compliance.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Multi-Forum Practice */}
+
+                  <div className="group flex items-center gap-4 px-1 py-3.5 transition-colors duration-200 hover:bg-[#fafafa]">
+
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
+                      <FaGavel className="text-xs" />
+                    </div>
+
+                    <div>
+
+                      <h3 className="font-serif text-[15px] leading-tight text-[#111111] sm:text-base">
+                        Multi-Forum Practice
+                      </h3>
+
+                      <p className="mt-1 text-[10px] leading-4 text-[#666666] sm:text-[11px]">
+                        Handles civil, criminal, commercial, family, banking
+                        and real estate disputes.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
 
               </div>
 
 
-              {/* ACHIEVEMENT 2 */}
+              {/* =================================================
+                  RIGHT — COMMUNICATION / LANGUAGES
+              ================================================= */}
 
-              <div className="border-r border-black/10 px-4 py-5 text-center sm:px-5">
+              <div>
 
-                <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
-                  <FaBuilding className="text-sm" />
+                <div className="mb-6">
+
+                  <div className="mb-3 h-[2px] w-[30px] bg-[#B08D57]" />
+
+                  <p className="text-[8px] font-semibold uppercase tracking-[2.5px] text-[#777777]">
+                    Communication
+                  </p>
+
+                  <h2 className="mt-1 font-serif text-2xl leading-tight text-[#111111] sm:text-3xl">
+                    Languages
+                  </h2>
+
                 </div>
 
-                <h3 className="font-serif text-base text-[#111111] sm:text-lg">
-                  Real Estate
-                </h3>
 
-                <p className="mt-1.5 text-[10px] leading-4 text-[#666666]">
-                  Represented leading real estate developers and corporate
-                  clients in complex matters.
+                <p className="max-w-md text-sm leading-6 text-[#666666] sm:text-[15px]">
+                  Professional communication with clients and stakeholders
+                  across multiple languages.
                 </p>
 
-              </div>
 
+                <div className="mt-6 flex flex-wrap gap-2">
 
-              {/* ACHIEVEMENT 3 */}
+                  {languages.map((language) => (
+                    <span
+                      key={language}
+                      className="border border-black/10 px-4 py-2 text-[10px] uppercase tracking-[1px] text-[#555555] transition-colors duration-200 hover:border-[#B08D57] hover:text-[#B08D57]"
+                    >
+                      {language}
+                    </span>
+                  ))}
 
-              <div className="border-r border-black/10 px-4 py-5 text-center sm:px-5">
-
-                <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
-                  <FaHome className="text-sm" />
                 </div>
-
-                <h3 className="font-serif text-base text-[#111111] sm:text-lg">
-                  Property Expertise
-                </h3>
-
-                <p className="mt-1.5 text-[10px] leading-4 text-[#666666]">
-                  Experience in high-value real estate transactions,
-                  title due diligence and RERA compliance.
-                </p>
-
-              </div>
-
-
-              {/* ACHIEVEMENT 4 */}
-
-              <div className="px-4 py-5 text-center sm:px-5">
-
-                <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center border border-[#B08D57]/40 text-[#B08D57]">
-                  <FaGavel className="text-sm" />
-                </div>
-
-                <h3 className="font-serif text-base text-[#111111] sm:text-lg">
-                  Multi-Forum Practice
-                </h3>
-
-                <p className="mt-1.5 text-[10px] leading-4 text-[#666666]">
-                  Handles civil, criminal, commercial, family, banking and
-                  real estate disputes.
-                </p>
 
               </div>
 
@@ -227,14 +290,12 @@ export default function KishanProfile() {
 
 
         {/* =====================================================
-            MAIN PRACTICE AREAS
+            PRACTICE AREAS
         ===================================================== */}
 
         <section className="bg-[#111111] text-white">
 
           <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-16 lg:py-20">
-
-            {/* HEADER */}
 
             <div className="max-w-xl">
 
@@ -256,11 +317,9 @@ export default function KishanProfile() {
             </div>
 
 
-            {/* PRACTICE AREA GRID */}
-
             <div className="mt-12 grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
 
-              {/* CIVIL */}
+              {/* Civil Litigation */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -277,7 +336,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* CRIMINAL */}
+              {/* Criminal Litigation */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -295,7 +354,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* REAL ESTATE */}
+              {/* Real Estate */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -331,7 +390,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* COMMERCIAL */}
+              {/* Commercial */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -349,7 +408,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* BANKING */}
+              {/* Banking */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -367,9 +426,9 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* FAMILY */}
+              {/* Family */}
 
-              <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818] sm:col-span-2 lg:col-span-1">
+              <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
                 <FaUsers className="text-xl text-[#B08D57]" />
 
@@ -385,7 +444,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* PROPERTY DUE DILIGENCE */}
+              {/* Property Due Diligence */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -403,7 +462,7 @@ export default function KishanProfile() {
               </div>
 
 
-              {/* DISPUTE RESOLUTION */}
+              {/* Arbitration */}
 
               <div className="group bg-[#111111] p-7 transition-colors duration-300 hover:bg-[#181818]">
 
@@ -495,63 +554,14 @@ export default function KishanProfile() {
 
 
         {/* =====================================================
-            LANGUAGES
+            GET IN TOUCH
         ===================================================== */}
 
         <section className="border-t border-black/10 bg-white">
 
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl px-6 py-14 sm:px-10 lg:px-16">
 
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-
-              <div>
-
-                <p className="text-[9px] font-semibold uppercase tracking-[3px] text-[#777777]">
-                  Communication
-                </p>
-
-                <h2 className="mt-2 font-serif text-2xl text-[#111111]">
-                  Languages
-                </h2>
-
-              </div>
-
-
-              <div className="flex flex-wrap gap-2">
-
-                {[
-                  "English",
-                  "Kannada",
-                  "Hindi",
-                  "Telugu",
-                  "Tamil",
-                ].map((language) => (
-                  <span
-                    key={language}
-                    className="border border-black/10 px-4 py-2 text-[10px] uppercase tracking-[1px] text-[#555555]"
-                  >
-                    {language}
-                  </span>
-                ))}
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* =====================================================
-            FINAL CONTACT
-        ===================================================== */}
-
-        <section className="border-t border-black/10 bg-white">
-
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:px-10 lg:px-16">
-
-            {/* HEADING */}
+            {/* Heading */}
 
             <div className="mb-8 text-center">
 
@@ -568,19 +578,19 @@ export default function KishanProfile() {
             </div>
 
 
-            {/* DESCRIPTION */}
+            {/* Description */}
 
             <p className="mx-auto mb-8 max-w-2xl text-center text-xs leading-6 text-[#666666]">
-              For professional enquiries and legal consultations, clients may
-              contact the office by phone, WhatsApp, email or prior appointment.
+              For professional enquiries and legal consultations, clients
+              may contact Kishan by phone, WhatsApp, email or prior appointment.
             </p>
 
 
-            {/* CONTACT DETAILS */}
+            {/* Contact Details */}
 
             <div className="grid gap-4 sm:grid-cols-3">
 
-              {/* PHONE */}
+              {/* Phone */}
 
               <a
                 href="tel:+918310790921"
@@ -600,7 +610,7 @@ export default function KishanProfile() {
               </a>
 
 
-              {/* WHATSAPP */}
+              {/* WhatsApp */}
 
               <a
                 href="https://wa.me/918310790921"
@@ -622,7 +632,7 @@ export default function KishanProfile() {
               </a>
 
 
-              {/* EMAIL */}
+              {/* Email */}
 
               <a
                 href="mailto:kishanshetty24@gmail.com"
@@ -653,3 +663,4 @@ export default function KishanProfile() {
     </>
   );
 }
+

@@ -41,7 +41,7 @@ export default function FAQSection() {
       id="faqs"
       className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-2"
     >
-      <div className="mx-auto max-w-[1180px] px-6 sm:px-8 lg:px-10">
+      <div className="mx-auto  px-6 sm:px-8 lg:px-10">
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-20">
 
@@ -59,7 +59,7 @@ export default function FAQSection() {
 
             {/* HEADING */}
 
-            <h2 className="mt-3 max-w-[390px] font-serif text-[34px] font-normal leading-[1.08] tracking-[-0.5px] text-[#111111] sm:text-[40px]">
+            <h2 className="mt-3 font-serif text-[34px] font-normal leading-[1.08] tracking-[-0.5px] text-[#111111] sm:text-[40px]">
               Frequently asked
               <br />
               questions
@@ -67,14 +67,14 @@ export default function FAQSection() {
 
             {/* DESCRIPTION */}
 
-            <p className="mt-5 max-w-[350px] text-[11px] leading-[1.8] text-[#111111]/65 sm:text-[12px]">
+            <p className="mt-5  text-[11px] leading-[1.8] text-[#111111]/65 sm:text-[12px]">
               Find answers to the essential questions clients may have before
               beginning a consultation with Falcon Lex Legal.
             </p>
 
             {/* CONTACT BOX */}
 
-            <div className="mt-10 flex max-w-[350px] items-center justify-between bg-[#F1F1ED] px-5 py-5 sm:px-6">
+            <div className="mt-10 flex  items-center justify-between bg-[#F1F1ED] px-5 py-5 sm:px-6">
 
               <div>
                 <p className="font-serif text-[13px] text-[#111111]">
@@ -102,102 +102,93 @@ export default function FAQSection() {
               RIGHT SIDE — FAQ LIST
           ========================= */}
 
-          <div className="border-t border-[#111111]">
+<div className="space-y-0">
 
-            {faqs.map((faq, index) => {
-              const isOpen = openIndex === index;
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
 
-              return (
-                <div
-                  key={faq.question}
-                  className="border-b border-[#111111]/25"
-                >
+          return (
+           <div
+  key={faq.question}
+  className={`relative overflow-hidden border border-[#E2DED5] border-l-[3px] bg-[#F9F8F4] transition-all duration-300 ${
+    isOpen
+      ? "rounded-r-[18px] border-l-[#C5A45D] shadow-sm"
+      : "rounded-r-[18px] border-l-[#C5A45D] hover:shadow-sm"
+  }`}
+>
 
-                  {/* QUESTION */}
+              <button
+                type="button"
+                onClick={() => toggleFAQ(index)}
+                aria-expanded={isOpen}
+                className="group flex w-full items-center justify-between gap-6 px-5 py-5 text-left sm:px-6 sm:py-6"
+              >
 
-                  <button
-                    type="button"
-                    onClick={() => toggleFAQ(index)}
-                    aria-expanded={isOpen}
-                    className="group flex w-full items-center justify-between gap-6 py-5 text-left sm:py-[18px]"
-                  >
+                <div className="flex min-w-0 items-center gap-4">
 
-                    <div className="flex min-w-0 items-center gap-4">
+                  <span className="w-[19px] shrink-0 font-serif text-[7px] text-[#C5A45D]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
-                      {/* NUMBER */}
-
-                      <span className="w-[22px] shrink-0 font-serif text-[9px] text-[#C5A45D]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-
-                      {/* QUESTION */}
-
-                      <span
-                        className={`font-serif text-[13px] leading-5 transition-colors duration-300 sm:text-[14px] ${
-                          isOpen
-                            ? "text-[#C5A45D]"
-                            : "text-[#111111] group-hover:text-[#C5A45D]"
-                        }`}
-                      >
-                        {faq.question}
-                      </span>
-
-                    </div>
-
-                    {/* PLUS / MINUS */}
-
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center text-[#111111] transition-colors duration-300 group-hover:text-[#C5A45D]">
-
-                      {isOpen ? (
-                        <Minus
-                          size={13}
-                          strokeWidth={1.5}
-                        />
-                      ) : (
-                        <Plus
-                          size={13}
-                          strokeWidth={1.5}
-                        />
-                      )}
-
-                    </span>
-
-                  </button>
-
-
-                  {/* ANSWER */}
-
-                  <div
-                    className={`grid transition-all duration-300 ease-in-out ${
+                  <span
+                    className={`font-serif text-[13px] leading-5 transition-colors duration-300 sm:text-[14px] ${
                       isOpen
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0"
+                        ? "text-[#C5A45D]"
+                        : "text-[#111111] group-hover:text-[#C5A45D]"
                     }`}
                   >
+                    {faq.question}
+                  </span>
 
-                    <div className="overflow-hidden">
+                </div>
 
-                      <div className="pb-6 pl-[38px] pr-8">
+                <span
+                  className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
+                    isOpen
+                      ? "border-[#C5A45D] text-[#C5A45D]"
+                      : "border-[#D8D4CB] text-[#777777] group-hover:border-[#C5A45D] group-hover:text-[#C5A45D]"
+                  }`}
+                >
+                  {isOpen ? (
+                    <Minus size={12} strokeWidth={1.5} />
+                  ) : (
+                    <Plus size={12} strokeWidth={1.5} />
+                  )}
+                </span>
 
-                        <p className="max-w-[650px] text-[11px] leading-[1.8] text-[#111111]/65 sm:text-[12px]">
-                          {faq.answer}
-                        </p>
+              </button>
 
-                      </div>
+              <div
+                className={`grid transition-all duration-300 ease-in-out ${
+                  isOpen
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
 
-                    </div>
+                <div className="overflow-hidden">
+
+                  <div className="border-t border-[#E8E5DE] px-5 pb-5 pt-4 sm:px-6 sm:pb-6">
+
+                    <p className=" pl-[38px] text-[11px] leading-[1.8] text-[#111111]/65 sm:text-[12px]">
+                      {faq.answer}
+                    </p>
 
                   </div>
 
                 </div>
-              );
-            })}
 
-          </div>
+              </div>
 
-        </div>
+            </div>
+          );
+        })}
 
       </div>
-    </section>
+
+    </div>
+
+  </div>
+</section>
   );
 }
