@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-17"
     >
 
       {/* =====================================================
@@ -34,28 +34,22 @@ export default function AboutSection() {
               LEFT — IMAGE
           ================================================== */}
 
-          <div className="relative flex justify-center lg:justify-start">
+{/* Image Side */}
+<div className="relative w-full">
 
-            {/* Gold Offset Frame */}
+  {/* Gold Offset Frame */}
+  <div className="absolute inset-0 translate-x-4 translate-y-4 border border-[#C5A45D]" />
 
-            <div
-              className="absolute bottom-[-12px] right-[4%] h-full w-[88%] border border-[#C5A45D] sm:right-[7%] lg:right-[8%]"
-            />
+  {/* Image */}
+  <div className="relative z-10 h-[320px] w-full overflow-hidden">
+    <img
+      src="/falcon-lex-legal-hero.png"
+      alt="Falcon Lex Legal office reception"
+      className="h-full w-full object-cover object-center"
+    />
+  </div>
 
-
-            {/* Image */}
-
-            <div className="relative z-10 overflow-hidden bg-white">
-
-              <img
-                src="/falcon-lex-legal.png"
-                alt="Falcon Lex Legal"
-                className="block h-[280px] w-[88%] object-cover object-center sm:h-[330px] lg:h-[360px]"
-              />
-
-            </div>
-
-          </div>
+</div>
 
 
           {/* ==================================================

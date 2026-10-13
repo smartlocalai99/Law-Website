@@ -434,41 +434,43 @@ export default function CourtsSection() {
 
           </div>
         </div>
+{/* =====================================================
+    URGENT LEGAL GUIDANCE STRIP
+===================================================== */}
 
-        {/* =====================================================
-            URGENT LEGAL GUIDANCE STRIP
-        ===================================================== */}
 
-        <div className="mt-10 bg-[#111111] px-5 py-4 sm:px-6">
+<div className="relative left-1/2 mt-2 w-screen -translate-x-1/2 bg-[#111111] px-5 py-3 sm:px-6">
 
-          <p className="text-center text-xs leading-6 text-white sm:text-sm">
 
-            <span className="font-semibold text-[#C5A45D]">
-              Need Urgent Legal Guidance?
-            </span>
+  <p className="text-center text-xs leading-6 text-white sm:text-sm">
 
-            <span className="mx-2 text-white/40">
-              •
-            </span>
+    <span className="font-semibold text-[#C5A45D]">
+      Need Urgent Legal Guidance?
+    </span>
 
-            Call{" "}
+    <span className="mx-2 text-white/40">
+      •
+    </span>
 
-            <a
-              href="tel:8310790921"
-              className="font-semibold text-white transition-colors duration-300 hover:text-[#C5A45D]"
-            >
-              8310790921
-            </a>
+    Call{" "}
 
-            {" "}or visit the office at{" "}
+    <a
+      href="tel:8310790921"
+      className="font-semibold text-white transition-colors duration-300 hover:text-[#C5A45D]"
+    >
+      8310790921
+    </a>
 
-            <span className="text-white">
-              Bengaluru
-            </span>
+    {" "}or visit the office at{" "}
 
-          </p>
+    <span className="text-white">
+      Bengaluru
+    </span>
 
-        </div>
+  </p>
+
+</div>
+
 
       </div>
     </section>

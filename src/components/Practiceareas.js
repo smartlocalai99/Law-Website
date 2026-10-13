@@ -1,6 +1,12 @@
+
+"use client";
+
+import { useRef } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
+  ChevronLeft,
+  ChevronRight,
   Building2,
   BriefcaseBusiness,
   FileText,
@@ -96,12 +102,31 @@ const practiceAreas = [
 ];
 
 export default function Practiceareas() {
+  const scrollRef = useRef(null);
+
+  const scrollCards = (direction) => {
+    if (!scrollRef.current) return;
+
+    const card = scrollRef.current.querySelector("a");
+
+    if (!card) return;
+
+    const cardWidth = card.getBoundingClientRect().width;
+    const gap = 16;
+
+    scrollRef.current.scrollBy({
+      left: direction * (cardWidth + gap),
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section
       id="practice-areas"
       className="relative overflow-hidden bg-[#080808] py-16 sm:py-20 lg:py-13"
     >
       <div className="mx-auto max-w-[1400px] px-5 sm:px-10 lg:px-12 xl:px-16">
+
         {/* HEADER */}
         <div className="flex items-end justify-between gap-6">
           <div>
@@ -119,37 +144,54 @@ export default function Practiceareas() {
             </p>
           </div>
 
-          {/* VIEW ALL BUTTON */}
-          <Link
-            href="/practice-areas"
-            className="group mb-2 hidden shrink-0 items-center gap-3 rounded-full border border-[#C5A45D]/40 px-5 py-3 text-[10px] font-semibold uppercase tracking-[2px] text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D]/10 hover:text-[#F5F1E8] sm:inline-flex"
-          >
-            View All Practice Areas
-            <ArrowRight
-              size={16}
-              strokeWidth={1.5}
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </Link>
+          {/* DESKTOP SCROLL ARROWS */}
+          <div className="mb-2 hidden shrink-0 items-center gap-3 sm:flex">
+            <button
+              type="button"
+              onClick={() => scrollCards(-1)}
+              aria-label="Previous practice area"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/40 text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#080808]"
+            >
+              <ChevronLeft size={20} strokeWidth={1.5} />
+            </button>
+
+            <button
+              type="button"
+              onClick={() => scrollCards(1)}
+              aria-label="Next practice area"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C5A45D]/40 text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#080808]"
+            >
+              <ChevronRight size={20} strokeWidth={1.5} />
+            </button>
+          </div>
         </div>
 
-        {/* MOBILE VIEW ALL */}
-        <div className="mt-5 sm:hidden">
-          <Link
-            href="/practice-areas"
-            className="group inline-flex items-center gap-3 rounded-full border border-[#C5A45D]/40 px-4 py-2.5 text-[9px] font-semibold uppercase tracking-[2px] text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D]/10 hover:text-[#F5F1E8]"
+        {/* MOBILE SCROLL ARROWS */}
+        <div className="mt-5 flex items-center gap-3 sm:hidden">
+          <button
+            type="button"
+            onClick={() => scrollCards(-1)}
+            aria-label="Previous practice area"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#C5A45D]/40 text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#080808]"
           >
-            View All Practice Areas
-            <ArrowRight
-              size={15}
-              strokeWidth={1.5}
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </Link>
+            <ChevronLeft size={19} strokeWidth={1.5} />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => scrollCards(1)}
+            aria-label="Next practice area"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#C5A45D]/40 text-[#C5A45D] transition-all duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#080808]"
+          >
+            <ChevronRight size={19} strokeWidth={1.5} />
+          </button>
         </div>
 
         {/* CARDS */}
-        <div className="mt-8 -mx-5 overflow-x-auto px-5 pb-5 sm:-mx-10 sm:px-10 lg:-mx-12 lg:px-12 xl:-mx-16 xl:px-16 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div
+          ref={scrollRef}
+          className="mt-8 -mx-5 overflow-x-auto scroll-smooth px-5 pb-5 sm:-mx-10 sm:px-10 lg:-mx-12 lg:px-12 xl:-mx-16 xl:px-16 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
           <div className="flex w-max gap-4">
             {practiceAreas.map((area) => {
               const Icon = area.icon;
@@ -161,6 +203,7 @@ export default function Practiceareas() {
                   className="block shrink-0"
                 >
                   <article className="group relative flex h-[320px] w-[280px] flex-col overflow-hidden rounded-[14px] border border-[#C5A45D]/25 bg-[#0A0A0A] transition-all duration-300 hover:-translate-y-1 hover:border-[#C5A45D]/70">
+
                     {/* IMAGE */}
                     <div className="relative h-[155px] w-full shrink-0 overflow-hidden">
                       <img
@@ -192,16 +235,15 @@ export default function Practiceareas() {
                           {area.description}
                         </p>
                       </div>
-
-                    
-                      
                     </div>
+
                   </article>
                 </Link>
               );
             })}
           </div>
         </div>
+
       </div>
     </section>
   );
