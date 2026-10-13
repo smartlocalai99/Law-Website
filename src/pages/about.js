@@ -1,9 +1,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Seo from "../components/Seo";
 
 export default function About() {
   return (
     <>
+      <Seo title="About Falcon Lex Legal in Bengaluru | Falcon Lex Legal" description="Learn about Falcon Lex Legal, a Bengaluru law firm providing legal counsel and representation across Bengaluru and Karnataka." path="/about" />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const matters = [
   "SARFAESI proceedings",
@@ -76,6 +77,7 @@ const faqs = [
 export default function BankingSarfaesi() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Banking & SARFAESI in Bengaluru | Falcon Lex Legal" description="Legal assistance for banking disputes, loan recovery, SARFAESI enforcement actions, DRT proceedings and related remedies in Bengaluru." path="/practice-areas/banking-sarfaesi" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden">
         <img

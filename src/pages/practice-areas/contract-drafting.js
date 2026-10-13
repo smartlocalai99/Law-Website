@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const matters = [
   "Commercial agreements",
@@ -82,6 +83,7 @@ const faqs = [
 export default function ContractDrafting() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Contract Drafting in Bengaluru | Falcon Lex Legal" description="Drafting and review of commercial, service, employment, lease, sale, partnership and other agreements in Bengaluru." path="/practice-areas/contract-drafting" />
       {/* Hero */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

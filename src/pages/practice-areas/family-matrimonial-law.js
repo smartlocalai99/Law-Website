@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const matters = [
   "Divorce and matrimonial disputes",
@@ -76,6 +77,7 @@ const faqs = [
 export default function FamilyMatrimonialLaw() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Legal assistance for divorce, custody, maintenance, domestic violence matters, family settlements and matrimonial proceedings." path="/practice-areas/family-matrimonial-law" />
 
       {/* =========================================================
           HERO

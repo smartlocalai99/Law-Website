@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function CommercialLitigation() {
   const matters = [
@@ -76,6 +77,7 @@ export default function CommercialLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance for business, contract, partnership, payment and shareholder disputes, including drafting and court representation." path="/practice-areas/commercial-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

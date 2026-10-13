@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const matters = [
   "Commercial arbitration",
@@ -66,6 +67,7 @@ const faqs = [
 export default function ArbitrationMediation() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
+      <Seo title="Arbitration & Mediation in Bengaluru | Falcon Lex Legal" description="Legal assistance for arbitration proceedings, mediation, contractual disputes, interim relief and arbitral award remedies in Bengaluru." path="/practice-areas/arbitration-mediation" />
 
       {/* =========================================================
           HERO

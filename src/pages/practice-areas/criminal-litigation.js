@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function CriminalLitigation() {
   
@@ -61,6 +62,7 @@ export default function CriminalLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance with criminal matters, case assessment, research, documentation, court representation, hearings and appeals." path="/practice-areas/criminal-litigation" />
 
       {/* =========================================================
           HERO — SAME AS CIVIL

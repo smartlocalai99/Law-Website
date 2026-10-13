@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function RealEstatePropertyLaw() {
   const matters = [
@@ -76,6 +77,7 @@ export default function RealEstatePropertyLaw() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Legal assistance for property title, transactions, due diligence, tenancy, possession, partition, conveyancing and property disputes." path="/practice-areas/real-estate-property-law" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function ReraLitigation() {
   const matters = [
@@ -76,6 +77,7 @@ export default function ReraLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
+      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance for RERA complaints, builder disputes, possession delays, refund claims, construction issues and RERA appeals." path="/practice-areas/rera-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

@@ -1,5 +1,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Head from "next/head";
+import Seo from "../../components/Seo";
 
 import {
   FaPhoneAlt,
@@ -26,6 +28,16 @@ export default function KishanProfile() {
 
   return (
     <>
+      <Seo title="Kishan Shetty in Bengaluru | Falcon Lex Legal" description="Read about Advocate Kishan Shetty S.R. and his legal practice at Falcon Lex Legal in Bengaluru." path="/advocates/kishan-shetty" />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Kishan Shetty S.R.",
+          "jobTitle": "Advocate",
+          "worksFor": { "@type": "Organization", "name": "Falcon Lex Legal" }
+        }) }} />
+      </Head>
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">

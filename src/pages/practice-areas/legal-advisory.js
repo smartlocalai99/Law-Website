@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const matters = [
   "General legal consultations",
@@ -66,6 +67,7 @@ const faqs = [
 export default function LegalAdvisory() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
+      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Legal consultations covering contracts, business matters, property transactions, notices, compliance, risk assessment and pre-litigation strategy." path="/practice-areas/legal-advisory" />
 
       {/* =========================================================
           HERO

@@ -21,6 +21,25 @@ export default function Home() {
         <link rel="canonical" href="https://www.falconlexlegal.in" />
       </Head>
 
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          "name": "Falcon Lex Legal",
+          "url": "https://www.falconlexlegal.in",
+          "telephone": "+91 99012 78154",
+          "email": "Falconlexlegal@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#135-136, 1st Floor, Plazzo Retail Mall, Commercial Street",
+            "addressLocality": "Bengaluru",
+            "postalCode": "560001",
+            "addressCountry": "IN"
+          },
+          "openingHours": "Mo-Sa 10:00-20:00"
+        }) }} />
+      </Head>
+
       <Header />
       <Herosection />
       <Aboutsection />
