@@ -1,4 +1,4 @@
-import { ArrowUpRight, Phone } from "lucide-react";
+  import { ArrowUpRight, Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -19,7 +19,7 @@ export default function HeroSection() {
         />
 
         {/* Dark cinematic overlay */}
-        <div className="absolute inset-0 bg-black/30"/>
+        <div className="absolute inset-0 bg-black/30" />
 
         {/* Left side darker for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/65 to-black/45" />
@@ -47,7 +47,7 @@ export default function HeroSection() {
 
             {/* <div className="mb-8">
 
-              <p className="falcon-title text-[11px] font-semibold uppercase tracking-[4px] text-[#C5A45D]">
+              <p className="Falcon Lex Legal-title text-[11px] font-semibold uppercase tracking-[4px] text-[#C5A45D]">
                 Falcon Lex Legal
               </p>
 
@@ -141,15 +141,15 @@ export default function HeroSection() {
 
             <div className="mt-10 flex flex-wrap items-center gap-5">
 
-              {/* Schedule Consultation */}
+              {/* Explore Practice Areas */}
 
               <a
-                href="#contact"
+                href="#practice-areas"
                 className="group inline-flex h-[61px] items-center gap-7 bg-[#C5A45D] px-8 text-[10px] font-semibold uppercase tracking-[2px] text-[#0A0A0A] transition-all duration-300 hover:bg-[#D4B56B]"
               >
 
                 <span>
-                  Schedule a Consultation
+                  Explore Practice Areas
                 </span>
 
                 <span className="flex h-7 w-7 items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
@@ -163,24 +163,6 @@ export default function HeroSection() {
 
               </a>
 
-
-              {/* Call Us */}
-
-              <a
-                href="tel:+919XXXXXXXXX"
-                className="group inline-flex h-[61px] items-center gap-4 border border-white/25 px-8 text-[10px] font-semibold uppercase tracking-[2px] text-[#F5F1E8] transition-all duration-300 hover:border-[#C5A45D] hover:text-[#C5A45D]"
-              >
-
-                <Phone
-                  size={18}
-                  strokeWidth={1.5}
-                />
-
-                <span>
-                  Call Us
-                </span>
-
-              </a>
 
             </div>
 

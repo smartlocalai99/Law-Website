@@ -60,85 +60,65 @@ const courtLocations = [
       },
     ],
   },
+{
+  id: "devanahalli",
+  city: "Devanahalli",
+  left: "77%",
+  top: "68%",
+  type: "location",
 
-  {
-    id: "devanahalli",
-    city: "Devanahalli",
-    left: "77%",
-    top: "68%",
-    type: "location",
+  courts: [
+    {
+      name: "ದೇವನಹಳ್ಳಿ ನ್ಯಾಯಾಲಯಗಳು",
+      icon: FaMapMarkerAlt,
+    },
+  ],
+},
 
-    courts: [
-      {
-        name: "Devanahalli Courts",
-        icon: FaMapMarkerAlt,
-      },
-    ],
-  },
+{
+  id: "nelamangala",
+  city: "Nelamangala",
+  left: "69%",
+  top: "74%",
+  type: "location",
 
-  {
-    id: "nelamangala",
-    city: "Nelamangala",
-    left: "69%",
-    top: "74%",
-    type: "location",
+  courts: [
+    {
+      name: "ನೆಲಮಂಗಲ ನ್ಯಾಯಾಲಯಗಳು",
+      icon: FaMapMarkerAlt,
+    },
+  ],
+},
 
-    courts: [
-      {
-        name: "Nelamangala Courts",
-        icon: FaMapMarkerAlt,
-      },
-    ],
-  },
+{
+  id: "anekal",
+  city: "Anekal",
+  left: "77%",
+  top: "84%",
+  type: "location",
 
-  {
-    id: "anekal",
-    city: "Anekal",
-    left: "77%",
-    top: "84%",
-    type: "location",
+  courts: [
+    {
+      name: "ಆನೇಕಲ್ ನ್ಯಾಯಾಲಯಗಳು",
+      icon: FaMapMarkerAlt,
+    },
+  ],
+},
 
-    courts: [
-      {
-        name: "Anekal Courts",
-        icon: FaMapMarkerAlt,
-      },
-    ],
-  },
+{
+  id: "hosakote",
+  city: "Hosakote",
+  left: "81%",
+  top: "78%",
+  type: "location",
 
-  {
-    id: "hosakote",
-    city: "Hosakote",
-    left: "81%",
-    top: "78%",
-    type: "location",
-
-    courts: [
-      {
-        name: "Courts at Hosakote",
-        icon: FaMapMarkerAlt,
-      },
-    ],
-  },
-
-  {
-    id: "karnataka",
-    city: "Across Karnataka",
-    left: "43%",
-    top: "48%",
-    type: "statewide",
-
-    courts: [
-      {
-        name: "District & Sessions Courts",
-        icon: FaGavel,
-      },
-      {
-        name: "Other Trial Courts across Karnataka",
-        icon: FaLayerGroup,
-      },
-    ],
-  },
+  courts: [
+    {
+      name: "ಹೊಸಕೋಟೆ ನ್ಯಾಯಾಲಯಗಳು",
+      icon: FaMapMarkerAlt,
+    },
+  ],
+},
 ];
 
 /*
