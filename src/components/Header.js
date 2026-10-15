@@ -57,6 +57,7 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [practiceAreasOpen, setPracticeAreasOpen] = useState(false);
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full">
@@ -224,20 +225,34 @@ export default function Header() {
         {menuOpen && (
           <div className="absolute left-0 right-0 top-full max-h-[calc(100vh-72px)] overflow-y-auto border-t border-white/10 bg-[#0A0A0A] px-5 py-5 shadow-xl lg:hidden">
             <div className="grid grid-cols-2 gap-x-5 gap-y-4">
-              {navLinks.map((link) => (
+              {navLinks.filter((link) => link.title !== "Practice Areas").map((link) => (
                 <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="py-1 text-sm text-[#C2CBD2] hover:text-[#C5A45D]">
                   {link.title}
                 </Link>
               ))}
             </div>
-            <p className="mb-3 mt-5 text-xs font-semibold uppercase tracking-[2px] text-[#C5A45D]">Practice Areas</p>
-            <div className="grid grid-cols-2 gap-x-5 gap-y-3">
-              {practiceAreas.map((area) => (
-                <Link key={area.href} href={area.href} onClick={() => setMenuOpen(false)} className="text-xs leading-5 text-[#C2CBD2] hover:text-white">
-                  {area.title}
-                </Link>
-              ))}
-            </div>
+            <button
+              type="button"
+              aria-expanded={practiceAreasOpen}
+              onClick={() => setPracticeAreasOpen(!practiceAreasOpen)}
+              className="mt-4 flex w-full items-center justify-between border-t border-white/10 py-4 text-left text-sm font-medium text-[#C2CBD2] hover:text-[#C5A45D]"
+            >
+              Practice Areas
+              <span aria-hidden="true" className={`text-xs transition-transform ${practiceAreasOpen ? "rotate-180" : ""}`}>▾</span>
+            </button>
+            {practiceAreasOpen && (
+              <div className="max-h-[40vh] overflow-y-auto border-y border-white/10 py-3">
+                <ul className="space-y-3">
+                  {practiceAreas.map((area) => (
+                    <li key={area.href}>
+                      <Link href={area.href} onClick={() => setMenuOpen(false)} className="block py-1 text-sm leading-5 text-[#C2CBD2] hover:text-white">
+                        {area.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div className="mt-5 flex flex-wrap gap-3 border-t border-white/10 pt-4">
               <a href="https://wa.me/918310790921" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" className="rounded-full border border-[#25D366] px-4 py-2.5 text-sm font-semibold text-[#25D366]">WhatsApp</a>
               <a href="tel:9901278154" aria-label="Call Falcon Lex Legal" className="rounded-full bg-[#C5A45D] px-4 py-2.5 text-sm font-semibold text-[#102437]">Call</a>

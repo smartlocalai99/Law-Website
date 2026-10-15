@@ -28,12 +28,12 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Details */}
-        <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mx-auto mt-12 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-8 lg:grid-cols-5">
 
           {/* Phone */}
           <a
             href="tel:+919901278154"
-            className="group flex flex-col items-center text-center"
+            className="group flex min-w-0 flex-col items-center text-center"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32] transition-all duration-300 group-hover:bg-[#111111] group-hover:text-[#C5A45D]">
               <FaPhoneAlt size={15} />
@@ -53,7 +53,7 @@ export default function ContactSection() {
             href="https://wa.me/918310790921"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center text-center"
+            className="group flex min-w-0 flex-col items-center text-center"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32] transition-all duration-300 group-hover:bg-[#111111] group-hover:text-[#C5A45D]">
               <FaWhatsapp size={17} />
@@ -71,7 +71,7 @@ export default function ContactSection() {
           {/* Email */}
           <a
             href="mailto:Falconlexlegal@gmail.com"
-            className="group flex flex-col items-center text-center"
+            className="group flex min-w-0 flex-col items-center text-center"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32] transition-all duration-300 group-hover:bg-[#111111] group-hover:text-[#C5A45D]">
               <FaEnvelope size={15} />
@@ -81,7 +81,7 @@ export default function ContactSection() {
               Email
             </h3>
 
-            <p className="mt-2 break-all text-sm text-[#666666] transition-colors duration-300 group-hover:text-[#8B6B32]">
+            <p className="mt-2 break-all text-xs text-[#666666] transition-colors duration-300 group-hover:text-[#8B6B32] sm:text-sm">
               Falconlexlegal@gmail.com
             </p>
           </a>
@@ -91,7 +91,7 @@ export default function ContactSection() {
             href="https://www.google.com/maps/dir/?api=1&destination=Plazzo+Retail+Mall%2C+Commercial+Street%2C+Bengaluru+560001"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center text-center"
+            className="group flex min-w-0 flex-col items-center text-center"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32] transition-all duration-300 group-hover:bg-[#111111] group-hover:text-[#C5A45D]">
               <FaMapMarkerAlt size={16} />
@@ -101,7 +101,7 @@ export default function ContactSection() {
               Office
             </h3>
 
-            <p className="mt-2 text-sm leading-6 text-[#666666] transition-colors duration-300 group-hover:text-[#8B6B32]">
+            <p className="mt-2 break-words text-xs leading-5 text-[#666666] transition-colors duration-300 group-hover:text-[#8B6B32] sm:text-sm sm:leading-6">
               #135-136, 1st Floor,
               <br />
               Plazzo Retail Mall,
@@ -117,7 +117,7 @@ export default function ContactSection() {
           </a>
 
           {/* Office Hours — beside Location */}
-          <div className="flex flex-col items-center text-center">
+            <div className="flex min-w-0 flex-col items-center text-center">
 
             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C5A45D] text-[#8B6B32]">
               <FaClock size={14} />
@@ -127,7 +127,7 @@ export default function ContactSection() {
               Office Hours
             </h3>
 
-            <p className="mt-2 text-sm leading-6 text-[#666666]">
+            <p className="mt-2 text-xs leading-5 text-[#666666] sm:text-sm sm:leading-6">
               Monday – Saturday
               <br />
               10:00 AM – 8:00 PM
