@@ -267,7 +267,7 @@ export default function CourtsSection() {
             <div className="relative w-[78%] sm:w-[72%]">
 
               <img
-                src="/karnataka-map.png"
+                src="/karnataka-map.webp"
                 alt="Karnataka map showing court locations"
                 className="relative z-0 block h-auto w-full select-none object-contain"
               />
