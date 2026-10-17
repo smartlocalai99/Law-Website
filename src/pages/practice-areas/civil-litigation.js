@@ -67,7 +67,7 @@ export default function CivilLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Civil litigation advocates in Bengaluru: case assessment, pleadings, court representation, interim relief, evidence and appeals. Consultations by appointment." path="/practice-areas/civil-litigation" />
+      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Civil litigation advocates in Bengaluru: case assessment, pleadings, court representation, interim relief, evidence and appeals." path="/practice-areas/civil-litigation" />
 
       {/* =========================================================
           HERO — KEEP AS IT IS
