@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Falcon Lex Legal </title>
+        <title>Falcon Lex Legal | Law Firm & Advocates in Bengaluru</title>
         <meta
           name="description"
           content="Bengaluru law firm handling civil, criminal, property, RERA, commercial, banking and family matters. Consultations by prior appointment."
