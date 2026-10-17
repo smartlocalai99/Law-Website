@@ -72,6 +72,11 @@ const faqs = [
     answer:
       "Relevant documents may include loan agreements, sanction letters, account statements, repayment records, security documents, notices issued by the lender, correspondence and previous legal or court documents.",
   },
+  {
+    question: "Do you handle SARFAESI matters in Bengaluru?",
+    answer:
+      "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with banking and SARFAESI matters before the appropriate forums. The suitable forum depends on the nature of the matter and the stage of proceedings.",
+  },
 ];
 
 export default function BankingSarfaesi() {
@@ -103,7 +108,7 @@ export default function BankingSarfaesi() {
             </p>
 
             <h1 className="mt-3 font-serif text-4xl leading-tight text-[#F5F1E8] sm:text-5xl lg:text-6xl">
-              Banking &amp; SARFAESI
+              Banking &amp; SARFAESI Advocates in Bengaluru
             </h1>
 
             <p className="mt-4 max-w-2xl text-sm leading-7 text-[#D0D6D9] sm:text-base">
@@ -123,14 +128,17 @@ export default function BankingSarfaesi() {
             </p>
 
             <h2 className="mt-3 max-w-xl font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Legal Assistance in Banking &amp; Recovery Matters
+              SARFAESI and Banking Recovery Matters in Bengaluru
             </h2>
 
             <div className="mt-5 max-w-2xl space-y-4 text-sm leading-7 text-[#666666]">
               <p>
                 Banking and SARFAESI matters often involve complex loan
                 documentation, secured assets, recovery proceedings and
-                statutory requirements.
+                statutory requirements. Falcon Lex Legal is a Bengaluru law
+                firm assisting borrowers, property owners and other affected
+                parties with banking and SARFAESI matters before the
+                appropriate forums.
               </p>
 
               <p>
@@ -227,7 +235,7 @@ export default function BankingSarfaesi() {
               </p>
 
               <h2 className="mt-4 font-serif text-3xl leading-tight text-[#F5F1E8] sm:text-4xl">
-                Careful Review. Strategic Recovery Representation.
+                Our Approach to SARFAESI and Recovery Matters
               </h2>
             </div>
 
@@ -259,7 +267,7 @@ export default function BankingSarfaesi() {
             </p>
 
             <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Frequently Asked Questions
+              SARFAESI and Banking FAQs
             </h2>
 
             <p className="mt-4 max-w-md text-sm leading-7 text-[#666666]">

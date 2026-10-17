@@ -58,11 +58,16 @@ export default function CivilLitigation() {
       answer:
         "Assistance may be available for appropriate civil appeals, revisions and related proceedings depending on the nature and stage of the matter.",
     },
+      {
+        question: "Do you handle civil cases in Bengaluru?",
+        answer:
+          "Yes. Falcon Lex Legal is based in Bengaluru and assists clients in civil matters before the appropriate courts and forums. The suitable forum depends on the nature and value of the dispute.",
+      },
   ];
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Civil litigation assistance covering case assessment, pleadings, court representation, interim relief, evidence, arguments and appeals." path="/practice-areas/civil-litigation" />
+      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Civil litigation advocates in Bengaluru: case assessment, pleadings, court representation, interim relief, evidence and appeals. Consultations by appointment." path="/practice-areas/civil-litigation" />
 
       {/* =========================================================
           HERO — KEEP AS IT IS
@@ -92,7 +97,7 @@ export default function CivilLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Civil Litigation
+              Civil Litigation Advocates in Bengaluru
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
@@ -123,7 +128,7 @@ export default function CivilLitigation() {
         </p>
 
         <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-          Civil Litigation
+          Civil Disputes and Court Proceedings in Bengaluru
         </h2>
 
         <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -135,7 +140,9 @@ export default function CivilLitigation() {
             obligations, property, contracts, recovery claims and other
             civil matters. Effective representation requires careful
             assessment of the facts, documents, applicable law and
-            procedural requirements.
+            procedural requirements. Falcon Lex Legal is a Bengaluru law firm
+            assisting individuals and businesses with civil disputes before
+            the appropriate courts and forums.
           </p>
 
           <p className="mt-6 text-[15px] leading-8 text-[#444444]">
@@ -221,7 +228,7 @@ export default function CivilLitigation() {
       </p>
 
       <h2 className="mt-4 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-        Legal Assistance & Representation
+        Civil Litigation Services in Bengaluru
       </h2>
 
       <p className="mx-auto mt-5 text-sm leading-7 text-[#666666]">
@@ -286,7 +293,7 @@ export default function CivilLitigation() {
         </p>
 
         <h2 className="mt-4 font-serif text-3xl leading-tight text-[#F5F1E8] sm:text-4xl">
-          Careful Preparation. Clear Representation.
+          Our Approach to Civil Litigation
         </h2>
       </div>
 
