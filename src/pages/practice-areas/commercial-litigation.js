@@ -73,11 +73,16 @@ export default function CommercialLitigation() {
       answer:
         "A legal notice should be reviewed carefully before responding. The response should address the relevant facts, contractual obligations and legal position while protecting the client's commercial interests.",
     },
+    {
+      question: "Do you handle commercial disputes in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists businesses with commercial disputes, contract matters and related proceedings before the appropriate courts and forums. The suitable forum depends on the nature and value of the dispute.",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance for business, contract, partnership, payment and shareholder disputes, including drafting and court representation." path="/practice-areas/commercial-litigation" />
+      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Commercial litigation advocates in Bengaluru: business, contract, partnership, payment and shareholder disputes, drafting and court representation." path="/practice-areas/commercial-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
@@ -102,7 +107,7 @@ export default function CommercialLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Commercial Litigation
+              Commercial Litigation Advocates in Bengaluru
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
@@ -125,7 +130,7 @@ export default function CommercialLitigation() {
               </p>
 
               <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-                Resolving Complex Business Disputes
+                Commercial and Business Disputes in Bengaluru
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -141,7 +146,9 @@ export default function CommercialLitigation() {
                   We assist businesses, companies, entrepreneurs and other
                   commercial stakeholders in assessing disputes and pursuing
                   appropriate legal remedies while keeping their commercial
-                  interests in focus.
+                  interests in focus. Falcon Lex Legal is a Bengaluru law firm
+                  assisting businesses and individuals with commercial
+                  disputes before the appropriate courts and forums.
                 </p>
 
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
@@ -189,7 +196,7 @@ export default function CommercialLitigation() {
             </p>
 
             <h2 className="mt-4 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Commercial Legal Services
+              Commercial Litigation Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#666666]">

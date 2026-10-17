@@ -73,11 +73,16 @@ export default function RealEstatePropertyLaw() {
       answer:
         "Depending on the facts and the willingness of the parties, negotiation, mediation or other settlement mechanisms may be explored before or during litigation.",
     },
+    {
+      question: "Do you handle property matters in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with property transactions, title review and property disputes. Documents can be reviewed by appointment at our office. The suitable court depends on the nature of the dispute and where the property is situated.",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Legal assistance for property title, transactions, due diligence, tenancy, possession, partition, conveyancing and property disputes." path="/practice-areas/real-estate-property-law" />
+      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Property advocates in Bengaluru: title verification, due diligence, sale and purchase documents, tenancy, possession, partition and property disputes." path="/practice-areas/real-estate-property-law" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
@@ -102,7 +107,7 @@ export default function RealEstatePropertyLaw() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Real Estate & Property Law
+              Real Estate & Property Law Advocates in Bengaluru
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
@@ -125,7 +130,7 @@ export default function RealEstatePropertyLaw() {
               </p>
 
               <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-                Real Estate & Property Law
+                Property Transactions and Disputes in Bengaluru
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -141,7 +146,10 @@ export default function RealEstatePropertyLaw() {
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
                   Falcon Lex Legal assists clients with property transactions,
                   title assessment, due diligence, documentation, ownership,
-                  possession, tenancy and property-related disputes.
+                  possession, tenancy and property-related disputes. The firm
+                  is based in Bengaluru and assists buyers, sellers, landlords,
+                  tenants and families with property matters before the
+                  appropriate courts and forums.
                 </p>
 
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
@@ -192,7 +200,7 @@ export default function RealEstatePropertyLaw() {
             </p>
 
             <h2 className="mt-4 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Property Legal Services & Representation
+              Property Legal Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#666666]">

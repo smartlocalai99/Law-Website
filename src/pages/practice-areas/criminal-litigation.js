@@ -58,11 +58,16 @@ export default function CriminalLitigation() {
       answer:
         "Assistance may be available for appropriate regular bail, anticipatory bail and related proceedings depending on the facts, stage and circumstances of the matter.",
     },
+    {
+      question: "Do you handle criminal cases in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists clients in criminal matters, including bail and anticipatory bail applications, before the appropriate courts and forums. The suitable forum depends on the nature of the offence and the stage of proceedings.",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance with criminal matters, case assessment, research, documentation, court representation, hearings and appeals." path="/practice-areas/criminal-litigation" />
+      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Criminal litigation advocates in Bengaluru: bail and anticipatory bail, FIR quashing, trials, appeals and cheque bounce matters." path="/practice-areas/criminal-litigation" />
 
       {/* =========================================================
           HERO — SAME AS CIVIL
@@ -92,7 +97,7 @@ export default function CriminalLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Criminal Litigation
+              Criminal Litigation Advocates in Bengaluru
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
@@ -124,7 +129,7 @@ export default function CriminalLitigation() {
               </p>
 
               <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-                Criminal Litigation
+                Criminal Proceedings and Bail Matters in Bengaluru
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -137,7 +142,9 @@ export default function CriminalLitigation() {
                   bail proceedings, trials, evidence, appeals and other
                   criminal matters. Effective representation requires careful
                   assessment of the facts, documents, applicable law and
-                  procedural requirements.
+                  procedural requirements. Falcon Lex Legal is a Bengaluru law
+                  firm assisting clients with criminal matters before the
+                  appropriate courts and forums.
                 </p>
 
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
@@ -225,7 +232,7 @@ export default function CriminalLitigation() {
             </p>
 
             <h2 className="mt-4 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Legal Assistance & Representation
+              Criminal Litigation Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-5 text-sm leading-7 text-[#666666]">

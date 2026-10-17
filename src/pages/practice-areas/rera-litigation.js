@@ -73,11 +73,16 @@ export default function ReraLitigation() {
       answer:
         "Relevant documents may include the agreement for sale, allotment letter, payment receipts, correspondence with the developer, possession-related communications, project details and any notices or previous legal documents.",
     },
+    {
+      question: "Do you handle RERA complaints in Karnataka?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with RERA complaints and related proceedings before the appropriate authority and appellate forum in Karnataka. Eligibility and remedies depend on the project and the applicable law.",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="Legal assistance for RERA complaints, builder disputes, possession delays, refund claims, construction issues and RERA appeals." path="/practice-areas/rera-litigation" />
+      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="RERA advocates in Bengaluru: RERA complaints, builder disputes, possession delays, refund claims, defective construction and RERA appeals." path="/practice-areas/rera-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
@@ -102,7 +107,7 @@ export default function ReraLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              RERA Litigation
+              RERA Litigation Advocates in Bengaluru
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
@@ -125,7 +130,7 @@ export default function ReraLitigation() {
               </p>
 
               <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-                RERA Litigation
+                RERA Complaints and Builder Disputes in Karnataka
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -141,7 +146,9 @@ export default function ReraLitigation() {
                   Falcon Lex Legal assists clients in understanding their
                   rights, assessing contractual and statutory remedies and
                   pursuing appropriate proceedings before the relevant
-                  authority or appellate forum.
+                  authority or appellate forum. Falcon Lex Legal is a Bengaluru
+                  law firm assisting homebuyers, allottees and other parties
+                  with RERA matters in Karnataka.
                 </p>
 
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
@@ -192,7 +199,7 @@ export default function ReraLitigation() {
             </p>
 
             <h2 className="mt-4 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              RERA Legal Services & Representation
+              RERA Legal Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#666666]">

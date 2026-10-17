@@ -61,7 +61,7 @@ const faqs = [
   {
     question: "Why should I have a contract reviewed before signing?",
     answer:
-      "A legal review can help identify unclear obligations, unfavorable terms, potential liabilities, termination provisions, dispute-resolution clauses and other risks before the agreement is signed.",
+      "A legal review can help identify unclear obligations, unfavourable terms, potential liabilities, termination provisions, dispute-resolution clauses and other risks before the agreement is signed.",
   },
   {
     question: "Can you modify an existing contract?",
@@ -77,6 +77,11 @@ const faqs = [
     question: "What information is needed to draft a contract?",
     answer:
       "The relevant parties, purpose of the agreement, commercial terms, responsibilities, payment terms, duration, termination requirements and other specific business or transaction details are generally required.",
+  },
+  {
+    question: "Do you draft contracts for clients in Bengaluru?",
+    answer:
+      "Yes. Falcon Lex Legal is based in Bengaluru and drafts and reviews agreements for individuals, businesses and organisations. Documents can be discussed by appointment or at our office.",
   },
 ];
 
@@ -109,7 +114,7 @@ export default function ContractDrafting() {
             </p>
 
             <h1 className="font-serif text-4xl leading-tight text-[#F5F1E8] sm:text-5xl lg:text-6xl">
-              Contract Drafting
+              Contract Drafting Advocates in Bengaluru
             </h1>
 
             <p className="mt-4 max-w-2xl text-sm leading-7 text-[#D0D6D9] sm:text-base">
@@ -130,7 +135,7 @@ export default function ContractDrafting() {
             </p>
 
             <h2 className="font-serif text-3xl leading-tight sm:text-4xl">
-              Clear Contracts. Stronger Legal Protection.
+              Contract Drafting and Review in Bengaluru
             </h2>
 
             <div className="mt-6 space-y-4 text-sm leading-7 text-[#5F666B] sm:text-[15px]">
@@ -143,7 +148,9 @@ export default function ContractDrafting() {
               <p>
                 We assist individuals, businesses and organisations with
                 drafting, reviewing and revising agreements based on their
-                specific legal and commercial requirements.
+                specific legal and commercial requirements. Falcon Lex Legal is
+                a Bengaluru law firm assisting clients with contract drafting,
+                review and other legal drafts.
               </p>
 
               <p>
@@ -183,7 +190,7 @@ export default function ContractDrafting() {
             </p>
 
             <h2 className="font-serif text-3xl leading-tight sm:text-4xl">
-              Contract Legal Services
+              Contract Drafting Services in Bengaluru
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-[#5F666B] sm:text-[15px]">
@@ -257,7 +264,7 @@ export default function ContractDrafting() {
             </p>
 
             <h2 className="font-serif text-3xl leading-tight sm:text-4xl">
-              Frequently Asked Questions
+              Contract Drafting FAQs
             </h2>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-[#62686C]">

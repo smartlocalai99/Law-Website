@@ -72,12 +72,17 @@ const faqs = [
     answer:
       "Yes. Depending on the circumstances, negotiation, mediation and family settlement may provide alternatives to prolonged litigation.",
   },
+    {
+      question: "Do you handle divorce and family matters in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with divorce, custody, maintenance and other family matters. Consultations are by appointment.",
+    },
 ];
 
 export default function FamilyMatrimonialLaw() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Legal assistance for divorce, custody, maintenance, domestic violence matters, family settlements and matrimonial proceedings." path="/practice-areas/family-matrimonial-law" />
+      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Family law advocates in Bengaluru: divorce, mutual consent divorce, child custody, maintenance, domestic violence matters and family settlements." path="/practice-areas/family-matrimonial-law" />
 
       {/* =========================================================
           HERO
@@ -108,7 +113,7 @@ export default function FamilyMatrimonialLaw() {
             </p>
 
             <h1 className="mt-3 font-serif text-4xl leading-tight text-[#F5F1E8] sm:text-5xl lg:text-6xl">
-              Family &amp; Matrimonial Law
+              Family &amp; Matrimonial Law Advocates in Bengaluru
             </h1>
 
             <p className="mt-4 max-w-2xl text-sm leading-7 text-[#D0D6D9] sm:text-base">
@@ -137,7 +142,7 @@ export default function FamilyMatrimonialLaw() {
             </p>
 
             <h2 className="mt-3 max-w-xl font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Practical Legal Support for Family Matters
+              Divorce, Custody and Family Matters in Bengaluru
             </h2>
 
             <div className="mt-5 max-w-2xl space-y-4 text-sm leading-7 text-[#666666]">
@@ -152,6 +157,9 @@ export default function FamilyMatrimonialLaw() {
                 We assist clients in understanding their legal rights and
                 available remedies in matters involving marriage, separation,
                 divorce, children, maintenance and family relationships.
+                Falcon Lex Legal is a Bengaluru law firm assisting individuals
+                and families with matrimonial and family matters before the
+                appropriate courts and forums.
               </p>
 
               <p>
@@ -218,7 +226,7 @@ export default function FamilyMatrimonialLaw() {
             </p>
 
             <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Family &amp; Matrimonial Legal Services
+              Family &amp; Matrimonial Legal Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[#666666]">

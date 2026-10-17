@@ -62,12 +62,17 @@ const faqs = [
     answer:
       "Relevant documents may include contracts, agreements, correspondence, legal notices, transaction documents, invoices, previous communications and any other records connected with the matter.",
   },
+    {
+      question: "Do you provide legal advice in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and provides legal consultations and document review for individuals, businesses and organisations. Consultations are by appointment, at our office or by e-consultation.",
+    },
 ];
 
 export default function LegalAdvisory() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
-      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Legal consultations covering contracts, business matters, property transactions, notices, compliance, risk assessment and pre-litigation strategy." path="/practice-areas/legal-advisory" />
+      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Legal advisory in Bengaluru: consultations, contract and document review, legal notices, compliance guidance, risk assessment and pre-litigation strategy." path="/practice-areas/legal-advisory" />
 
       {/* =========================================================
           HERO
@@ -98,7 +103,7 @@ export default function LegalAdvisory() {
             </p>
 
             <h1 className="mt-3 font-serif text-4xl leading-tight text-[#F5F1E8] sm:text-5xl lg:text-6xl">
-              Legal Advisory
+              Legal Advisory Services in Bengaluru
             </h1>
 
             <p className="mt-5  text-sm leading-7 text-[#D0D6D9] sm:text-base">
@@ -131,7 +136,7 @@ export default function LegalAdvisory() {
               </p>
 
               <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-                Practical Legal Advice &amp; Strategic Guidance
+                Legal Consultations for Individuals and Businesses in Bengaluru
               </h2>
 
               <div className="mt-6 h-px w-14 bg-[#C5A45D]" />
@@ -147,7 +152,9 @@ export default function LegalAdvisory() {
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
                   We assist clients in evaluating legal issues, reviewing
                   documents and understanding potential risks before taking
-                  important legal or commercial decisions.
+                  important legal or commercial decisions. Falcon Lex Legal is
+                  a Bengaluru law firm providing legal consultations and
+                  document review to individuals, businesses and organisations.
                 </p>
 
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
@@ -216,7 +223,7 @@ export default function LegalAdvisory() {
             </p>
 
             <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Legal Advisory Services
+              Legal Advisory and Document Review in Bengaluru
             </h2>
 
             <p className="mx-auto mt-4  text-[13px] leading-7 text-[#666666]">

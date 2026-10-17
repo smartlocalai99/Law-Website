@@ -62,6 +62,11 @@ const faqs = [
     answer:
       "Relevant documents may include the underlying contract, arbitration clause, correspondence, invoices, notices, claims, payment records, supporting evidence and previous communications between the parties.",
   },
+    {
+      question: "Do you handle arbitration and mediation matters in Bengaluru?",
+      answer:
+        "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with arbitration, mediation and related proceedings. The suitable forum depends on the dispute and the arbitration agreement between the parties.",
+    },
 ];
 
 export default function ArbitrationMediation() {
@@ -97,7 +102,7 @@ export default function ArbitrationMediation() {
             </p>
 
             <h1 className="mt-3 font-serif text-4xl leading-tight text-[#F5F1E8] sm:text-5xl lg:text-6xl">
-              Arbitration &amp; Mediation
+              Arbitration &amp; Mediation Advocates in Bengaluru
             </h1>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-[#D0D6D9] sm:text-base">
@@ -127,7 +132,7 @@ export default function ArbitrationMediation() {
               </p>
 
               <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-                Effective Alternative Dispute Resolution
+                Arbitration, Mediation and Dispute Resolution in Bengaluru
               </h2>
 
               <div className="mt-6 h-px w-14 bg-[#C5A45D]" />
@@ -143,7 +148,9 @@ export default function ArbitrationMediation() {
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
                   We assist clients in evaluating whether arbitration, mediation
                   or negotiated settlement may be appropriate for their dispute
-                  and commercial objectives.
+                  and commercial objectives. Falcon Lex Legal is a Bengaluru
+                  law firm assisting businesses and individuals with
+                  arbitration, mediation and negotiated settlements.
                 </p>
 
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
@@ -208,7 +215,7 @@ export default function ArbitrationMediation() {
             </p>
 
             <h2 className="mt-3 font-serif text-3xl leading-tight text-[#0A0A0A] sm:text-4xl">
-              Arbitration &amp; Mediation Legal Services
+              Arbitration &amp; Mediation Legal Services in Bengaluru
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-[13px] leading-7 text-[#666666]">
