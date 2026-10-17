@@ -14,7 +14,7 @@ export default function HeroSection() {
 
         <img
           src="/hero-law.jpg"
-          alt=""
+          alt="High Court of Karnataka building, Bengaluru"
           className="absolute inset-0 h-half w-full object-cover object-center"
         />
 
