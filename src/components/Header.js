@@ -48,7 +48,7 @@ const practiceAreas = [
 
 const navLinks = [
   { title: "Home", href: "/" },
-  { title: "About", href: "/#about" },
+  { title: "About", href: "/about" },
   { title: "Practice Areas", href: "/#practice-areas" },
   { title: "Courts", href: "/#courts" },
   { title: "Case Studies", href: "/#case-studies" },
@@ -93,7 +93,7 @@ export default function Header() {
 
           <li>
             <Link
-              href="/#about"
+              href="/about"
               className="text-[16px] font-medium text-[#C2CBD2] transition-colors duration-300 hover:text-[#C5A45D]"
             >
               About
