@@ -51,7 +51,6 @@ const navLinks = [
   { title: "About", href: "/about" },
   { title: "Practice Areas", href: "/#practice-areas" },
   { title: "Courts", href: "/#courts" },
-  { title: "Case Studies", href: "/#case-studies" },
   { title: "Contact", href: "/#contact" },
 ];
 
