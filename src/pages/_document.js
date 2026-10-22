@@ -1,10 +1,16 @@
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" href="/tab-logo.png" />
+        <link
+          rel="icon"
+          href="/tab-logo.png"
+          type="image/png"
+          sizes="48x48"
+        />
       </Head>
 
       <body className="antialiased">
@@ -14,3 +20,4 @@ export default function Document() {
     </Html>
   );
 }
+
