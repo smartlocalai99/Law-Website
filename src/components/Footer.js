@@ -56,7 +56,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/falconlexlegal?vrfl=dGl0eWJoZTY4amdn"
                 aria-label="Instagram"
                 className="flex h-8 w-8 items-center justify-center border border-white/10 bg-[#181818] text-[#C5A45D] transition-colors duration-300 hover:border-[#C5A45D] hover:bg-[#C5A45D] hover:text-[#111111]"
               >
