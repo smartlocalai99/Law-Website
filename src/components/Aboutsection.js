@@ -45,6 +45,8 @@ export default function AboutSection() {
     <img
       src="/falcon-lex-legal-hero.png"
       alt="Falcon Lex Legal office reception"
+      loading="lazy"
+      decoding="async"
       className="h-full w-full object-cover object-center"
     />
   </div>
@@ -93,7 +95,7 @@ export default function AboutSection() {
             <p className="mt-4 text-sm leading-7 text-[#111111] sm:text-[15px]">
               The firm approaches each matter with careful preparation,
               sound legal analysis and a clear understanding of the
-              client's objectives.
+              client&apos;s objectives.
             </p>
 
 

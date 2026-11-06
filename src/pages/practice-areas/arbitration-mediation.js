@@ -72,7 +72,7 @@ const faqs = [
 export default function ArbitrationMediation() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
-      <Seo title="Arbitration & Mediation in Bengaluru | Falcon Lex Legal" description="Legal assistance for arbitration proceedings, mediation, contractual disputes, interim relief and arbitral award remedies in Bengaluru." path="/practice-areas/arbitration-mediation" />
+      <Seo title="Arbitration & Mediation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Areas of practice: arbitration, mediation and related dispute resolution." path="/practice-areas/arbitration-mediation" />
 
       {/* =========================================================
           HERO
@@ -82,6 +82,9 @@ export default function ArbitrationMediation() {
         <img
           src="/arbitration-mediation.jpg"
           alt="Arbitration & Mediation"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 

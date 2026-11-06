@@ -82,12 +82,15 @@ export default function ReraLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="RERA advocates in Bengaluru: RERA complaints, builder disputes, possession delays, refund claims, defective construction and RERA appeals." path="/practice-areas/rera-litigation" />
+      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: RERA litigation." path="/practice-areas/rera-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/rera-litigation.jpg"
           alt="RERA Litigation"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -261,7 +264,7 @@ export default function ReraLitigation() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's objectives,
+                 Our approach focuses on understanding the client&apos;s objectives,
                 assessing the relevant documents and preparing the matter for
                 appropriate proceedings before the RERA authority or appellate
                 forum.

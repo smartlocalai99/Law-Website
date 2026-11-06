@@ -67,7 +67,7 @@ export default function CivilLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Civil litigation advocates in Bengaluru: case assessment, pleadings, court representation, interim relief, evidence and appeals." path="/practice-areas/civil-litigation" />
+      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: civil litigation." path="/practice-areas/civil-litigation" />
 
       {/* =========================================================
           HERO — KEEP AS IT IS
@@ -77,6 +77,9 @@ export default function CivilLitigation() {
         <img
           src="/civil-litigation.jpg"
           alt="Civil Litigation"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -306,7 +309,7 @@ export default function CivilLitigation() {
         </p>
 
         <p>
-          Our approach focuses on understanding the client's objectives,
+           Our approach focuses on understanding the client&apos;s objectives,
           reviewing available documents and preparing the matter for the
           appropriate legal proceedings.
         </p>

@@ -24,7 +24,7 @@ const practiceAreas = [
     description:
       "Representation in civil disputes, recovery matters and related court proceedings.",
     icon: Scale,
-    image: "civil-litigation.jpg",
+    image: "/civil-litigation.jpg",
     slug: "civil-litigation",
   },
   {
@@ -32,7 +32,7 @@ const practiceAreas = [
     description:
       "Legal representation in criminal matters, defence proceedings and related cases.",
     icon: Shield,
-    image: "criminal-litigation.jpg",
+    image: "/criminal-litigation.jpg",
     slug: "criminal-litigation",
   },
   {
@@ -40,7 +40,7 @@ const practiceAreas = [
     description:
       "Legal assistance relating to property transactions, ownership, disputes and documentation.",
     icon: Home,
-    image: "real-estate.jpg",
+    image: "/real-estate.jpg",
     slug: "real-estate-property-law",
   },
   {
@@ -48,7 +48,7 @@ const practiceAreas = [
     description:
       "Representation in disputes and proceedings arising under RERA.",
     icon: Building2,
-    image: "rera-litigation.jpg",
+    image: "/rera-litigation.jpg",
     slug: "rera-litigation",
   },
   {
@@ -56,7 +56,7 @@ const practiceAreas = [
     description:
       "Legal representation in business, commercial and contractual disputes.",
     icon: BriefcaseBusiness,
-    image: "commercial-litigation.jpg",
+    image: "/commercial-litigation.jpg",
     slug: "commercial-litigation",
   },
   {
@@ -64,7 +64,7 @@ const practiceAreas = [
     description:
       "Representation in banking disputes, recovery matters and SARFAESI-related proceedings.",
     icon: Landmark,
-    image: "banking-sarfaesi.jpg",
+    image: "/banking-sarfaesi.jpg",
     slug: "banking-sarfaesi",
   },
   {
@@ -72,7 +72,7 @@ const practiceAreas = [
     description:
       "Legal assistance in matrimonial, family and related disputes.",
     icon: Users,
-    image: "family-matrimonial.jpg",
+    image: "/family-matrimonial.jpg",
     slug: "family-matrimonial-law",
   },
   {
@@ -80,7 +80,7 @@ const practiceAreas = [
     description:
       "Preparation and review of contracts, agreements and legal documents.",
     icon: FileText,
-    image: "contract-drafting.jpg",
+    image: "/contract-drafting.jpg",
     slug: "contract-drafting",
   },
   {
@@ -88,7 +88,7 @@ const practiceAreas = [
     description:
       "Representation and assistance in alternative dispute resolution matters.",
     icon: Handshake,
-    image: "arbitration-mediation.jpg",
+    image: "/arbitration-mediation.jpg",
     slug: "arbitration-mediation",
   },
   {
@@ -96,7 +96,7 @@ const practiceAreas = [
     description:
       "Strategic legal advice tailored to individual and business requirements.",
     icon: BriefcaseBusiness,
-    image: "legal-advisory.jpg",
+    image: "/legal-advisory.jpg",
     slug: "legal-advisory",
   },
 ];
@@ -209,6 +209,8 @@ export default function Practiceareas() {
                       <img
                         src={area.image}
                         alt={area.title}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
 

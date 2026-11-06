@@ -269,6 +269,8 @@ export default function CourtsSection() {
               <img
                 src="/karnataka-map.webp"
                 alt="Karnataka map showing court locations"
+                loading="lazy"
+                decoding="async"
                 className="relative z-0 block h-auto w-full select-none object-contain"
               />
 

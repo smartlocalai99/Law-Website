@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
+import Link from "next/link";
 
 export default function About() {
   return (
     <>
-      <Seo title="About Falcon Lex Legal in Bengaluru | Falcon Lex Legal" description="Learn about Falcon Lex Legal, a Bengaluru law firm providing legal counsel and representation across Bengaluru and Karnataka." path="/about" />
+      <Seo title="About Falcon Lex Legal in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal is a Bengaluru-based legal practice with areas of practice including litigation, real estate and dispute resolution across Karnataka." path="/about" />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">
@@ -19,7 +20,7 @@ export default function About() {
 
   {/* Hero Image */}
   <img
-    src="falcon-lex-legal-hero.png"
+    src="/falcon-lex-legal-hero.png"
     alt="Falcon Lex Legal Bengaluru law firm"
     className="absolute inset-0 h-full w-full object-cover object-center"
   />
@@ -107,7 +108,7 @@ export default function About() {
 
                 <p className="mt-6 text-sm leading-8 text-[#555555] sm:text-base">
                   Every matter is approached with a clear understanding of the
-                  client's circumstances, objectives and the legal issues that
+                   client&apos;s circumstances, objectives and the legal issues that
                   truly matter. The firm focuses on developing practical and
                   strategic legal solutions suited to the particular demands
                   of each matter.
@@ -159,7 +160,7 @@ export default function About() {
                   Falcon Lex Legal approaches every matter by understanding
                   the facts in depth, identifying the decisive legal issues,
                   anticipating the opposing case and developing a legal
-                  strategy aligned with the client's objectives.
+                   strategy aligned with the client&apos;s objectives.
                 </p>
 
                 <p className="mt-6 text-sm leading-8 text-[#BDBDBD] sm:text-base">
@@ -172,8 +173,8 @@ export default function About() {
                 <div className="mt-8 border-l-2 border-[#C5A45D] pl-5">
 
                   <p className="font-serif text-lg italic text-white">
-                    "Prepare thoroughly. Think strategically. Advocate with
-                    purpose."
+                     &quot;Prepare thoroughly. Think strategically. Advocate with
+                     purpose.&quot;
                   </p>
 
                 </div>
@@ -241,7 +242,7 @@ export default function About() {
 
                   <p className="mt-2 text-sm leading-7 text-[#666666]">
                     Legal representation built around understanding the
-                    client's circumstances, interests and objectives.
+                     client&apos;s circumstances, interests and objectives.
                   </p>
                 </div>
 
@@ -296,7 +297,7 @@ export default function About() {
 
             <p className="mt-6 text-sm leading-8 text-[#666666] sm:text-base">
               Falcon Lex Legal provides professional legal counsel and
-              representation in Bengaluru and across Karnataka. The firm's
+               representation in Bengaluru and across Karnataka. The firm&apos;s
               approach combines legal knowledge, courtroom experience,
               strategic thinking, meticulous preparation and practical advice
               to address the particular requirements of each client and matter.
@@ -328,12 +329,12 @@ export default function About() {
               representation, contact Falcon Lex Legal.
             </p>
 
-            <a
+            <Link
               href="/#contact"
               className="mt-7 inline-flex border border-[#C5A45D] px-6 py-3 text-[10px] font-semibold uppercase tracking-[2px] text-[#C5A45D] transition-colors duration-300 hover:bg-[#C5A45D] hover:text-[#111111]"
             >
               Get In Touch
-            </a>
+            </Link>
 
           </div>
 

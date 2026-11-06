@@ -67,7 +67,7 @@ export default function CriminalLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Criminal litigation advocates in Bengaluru: bail and anticipatory bail, FIR quashing, trials, appeals and cheque bounce matters." path="/practice-areas/criminal-litigation" />
+      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: criminal litigation." path="/practice-areas/criminal-litigation" />
 
       {/* =========================================================
           HERO — SAME AS CIVIL
@@ -77,6 +77,9 @@ export default function CriminalLitigation() {
         <img
           src="/criminal-litigation.jpg"
           alt="Criminal Litigation"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -314,7 +317,7 @@ export default function CriminalLitigation() {
         </p>
 
         <p>
-          Our approach focuses on understanding the client's objectives,
+           Our approach focuses on understanding the client&apos;s objectives,
           reviewing available documents and preparing the matter for the
           appropriate legal proceedings while keeping the client informed
           throughout the process.

@@ -82,12 +82,15 @@ const faqs = [
 export default function BankingSarfaesi() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Banking & SARFAESI in Bengaluru | Falcon Lex Legal" description="Legal assistance for banking disputes, loan recovery, SARFAESI enforcement actions, DRT proceedings and related remedies in Bengaluru." path="/practice-areas/banking-sarfaesi" />
+      <Seo title="Banking & SARFAESI in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Areas of practice: banking, recovery and SARFAESI-related matters." path="/practice-areas/banking-sarfaesi" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden">
         <img
           src="/banking-sarfaesi.jpg"
           alt="Banking & SARFAESI"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -248,7 +251,7 @@ export default function BankingSarfaesi() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's
+                 Our approach focuses on understanding the client&apos;s
                 circumstances, examining the underlying records and preparing
                 the matter for the appropriate legal proceedings while keeping
                 the client informed throughout the process.

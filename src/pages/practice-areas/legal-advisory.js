@@ -72,7 +72,7 @@ const faqs = [
 export default function LegalAdvisory() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
-      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Legal advisory in Bengaluru: consultations, contract and document review, legal notices, compliance guidance, risk assessment and pre-litigation strategy." path="/practice-areas/legal-advisory" />
+      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: legal advisory." path="/practice-areas/legal-advisory" />
 
       {/* =========================================================
           HERO
@@ -82,6 +82,9 @@ export default function LegalAdvisory() {
         <img
           src="/legal-advisory.jpg"
           alt="Legal Advisory"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -308,7 +311,7 @@ export default function LegalAdvisory() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's
+                 Our approach focuses on understanding the client&apos;s
                 circumstances, reviewing the relevant documents and providing
                 practical legal guidance that helps clients make informed
                 decisions and address potential issues at an early stage.

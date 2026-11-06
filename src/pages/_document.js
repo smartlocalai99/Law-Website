@@ -3,13 +3,13 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en-IN">
       <Head>
         <link
           rel="icon"
-          href="/tab-logo.png"
+          href="/favicon-96.png"
           type="image/png"
-          sizes="48x48"
+          sizes="96x96"
         />
       </Head>
 

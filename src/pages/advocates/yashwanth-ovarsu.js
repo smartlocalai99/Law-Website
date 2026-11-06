@@ -28,12 +28,13 @@ export default function YashwanthProfile() {
 
   return (
     <>
-      <Seo title="Yashwanth Ovarsu in Bengaluru | Falcon Lex Legal" description="Read about Advocate Yashwanth Ovarsu and his legal practice at Falcon Lex Legal in Bengaluru." path="/advocates/yashwanth-ovarsu" />
+      <Seo title="Yashwanth Ovarsu in Bengaluru | Falcon Lex Legal" description="Advocate Yashwanth Ovarsu at Falcon Lex Legal, Bengaluru." path="/advocates/yashwanth-ovarsu" />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Yashwanth Ovarsu",
+          "url": "https://www.falconlexlegal.in/advocates/yashwanth-ovarsu",
           "jobTitle": "Advocate",
           "worksFor": { "@type": "Organization", "name": "Falcon Lex Legal" }
         }) }} />
@@ -557,13 +558,13 @@ export default function YashwanthProfile() {
                   long before a matter reaches the courtroom. It begins with
                   understanding the facts in their entirety, identifying the
                   issues that truly matter, examining the evidence and
-                  developing a clear strategy around the client's objectives.
+                   developing a clear strategy around the client&apos;s objectives.
                 </p>
 
                 <p className="mt-6 text-sm leading-7 text-[#555555] sm:text-base">
                   His practice is defined by thorough preparation, rigorous
                   legal research, precise drafting and purposeful advocacy.
-                  He believes that an advocate's responsibility is not merely
+                   He believes that an advocate&apos;s responsibility is not merely
                   to argue a case, but to provide clarity, direction and
                   determined representation when the matter demands it.
                 </p>
@@ -571,8 +572,8 @@ export default function YashwanthProfile() {
                 <div className="mt-8 border-l-2 border-[#B08D57] pl-5">
 
                   <p className="font-serif text-lg italic text-[#222222]">
-                    "Prepare thoroughly, think strategically and advocate
-                    with purpose."
+                     &quot;Prepare thoroughly, think strategically and advocate
+                     with purpose.&quot;
                   </p>
 
                 </div>

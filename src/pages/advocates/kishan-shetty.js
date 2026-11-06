@@ -28,12 +28,13 @@ export default function KishanProfile() {
 
   return (
     <>
-      <Seo title="Kishan Shetty in Bengaluru | Falcon Lex Legal" description="Read about Advocate Kishan Shetty S.R. and his legal practice at Falcon Lex Legal in Bengaluru." path="/advocates/kishan-shetty" />
+      <Seo title="Kishan Shetty in Bengaluru | Falcon Lex Legal" description="Advocate Kishan Shetty S.R. at Falcon Lex Legal, Bengaluru." path="/advocates/kishan-shetty" />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Kishan Shetty S.R.",
+          "url": "https://www.falconlexlegal.in/advocates/kishan-shetty",
           "jobTitle": "Advocate",
           "worksFor": { "@type": "Organization", "name": "Falcon Lex Legal" }
         }) }} />
@@ -536,7 +537,7 @@ export default function KishanProfile() {
                 <p className="text-sm leading-7 text-[#555555] sm:text-base">
                   Kishan Shetty S.R. is known for meticulous legal research,
                   a strategic litigation approach, practical legal advice and
-                  commitment to protecting his clients' interests through
+                   commitment to protecting his clients&apos; interests through
                   efficient, ethical and result-oriented legal representation.
                 </p>
 
@@ -550,8 +551,8 @@ export default function KishanProfile() {
                 <div className="mt-8 border-l-2 border-[#B08D57] pl-5">
 
                   <p className="font-serif text-lg italic text-[#222222]">
-                    "Practical advice, strategic representation and focused
-                    legal solutions."
+                     &quot;Practical advice, strategic representation and focused
+                     legal solutions.&quot;
                   </p>
 
                 </div>

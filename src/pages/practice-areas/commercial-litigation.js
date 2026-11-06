@@ -82,12 +82,15 @@ export default function CommercialLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Commercial litigation advocates in Bengaluru: business, contract, partnership, payment and shareholder disputes, drafting and court representation." path="/practice-areas/commercial-litigation" />
+      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: commercial litigation." path="/practice-areas/commercial-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/commercial-litigation.jpg"
           alt="Commercial Litigation"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -259,7 +262,7 @@ export default function CommercialLitigation() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's commercial
+                 Our approach focuses on understanding the client&apos;s commercial
                 objectives, assessing the relevant agreements and records and
                 preparing the matter for appropriate legal proceedings while
                 keeping the client informed throughout the process.

@@ -82,12 +82,15 @@ export default function RealEstatePropertyLaw() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Property advocates in Bengaluru: title verification, due diligence, sale and purchase documents, tenancy, possession, partition and property disputes." path="/practice-areas/real-estate-property-law" />
+      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: real estate and property law." path="/practice-areas/real-estate-property-law" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/real-estate.jpg"
           alt="Real Estate & Property Law"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -261,7 +264,7 @@ export default function RealEstatePropertyLaw() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's objectives,
+                 Our approach focuses on understanding the client&apos;s objectives,
                 assessing the relevant property documents and providing clear
                 legal guidance suited to the transaction or dispute.
               </p>

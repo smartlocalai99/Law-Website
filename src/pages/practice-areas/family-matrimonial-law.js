@@ -82,7 +82,7 @@ const faqs = [
 export default function FamilyMatrimonialLaw() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Family law advocates in Bengaluru: divorce, mutual consent divorce, child custody, maintenance, domestic violence matters and family settlements." path="/practice-areas/family-matrimonial-law" />
+      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: family and matrimonial law." path="/practice-areas/family-matrimonial-law" />
 
       {/* =========================================================
           HERO
@@ -92,6 +92,9 @@ export default function FamilyMatrimonialLaw() {
         <img
           src="/family-matrimonial.jpg"
           alt="Family & Matrimonial Law"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -300,7 +303,7 @@ export default function FamilyMatrimonialLaw() {
               </p>
 
               <p>
-                Our approach focuses on understanding the client's
+                 Our approach focuses on understanding the client&apos;s
                 circumstances, reviewing relevant documents and providing
                 clear legal guidance while preparing the matter for
                 appropriate negotiation, mediation or court proceedings.
