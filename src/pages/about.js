@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <Seo title="About Falcon Lex Legal in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal is a Bengaluru-based legal practice with areas of practice including litigation, real estate and dispute resolution across Karnataka." path="/about" />
+      <Seo title="About the Firm | Falcon Lex Legal, Bengaluru" description="Learn about Falcon Lex Legal, a Bengaluru-based practice focused on litigation, property matters, dispute resolution and legal representation across Karnataka." path="/about" />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">

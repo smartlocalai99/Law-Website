@@ -72,7 +72,7 @@ const faqs = [
 export default function ArbitrationMediation() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
-      <Seo title="Arbitration & Mediation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Areas of practice: arbitration, mediation and related dispute resolution." path="/practice-areas/arbitration-mediation" />
+      <Seo title="Arbitration & Mediation | Falcon Lex Legal" description="Explore arbitration and mediation support from Falcon Lex Legal in Bengaluru, including representation and assistance in alternative dispute resolution matters." path="/practice-areas/arbitration-mediation" />
 
       {/* =========================================================
           HERO

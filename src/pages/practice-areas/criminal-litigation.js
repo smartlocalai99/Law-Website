@@ -67,7 +67,7 @@ export default function CriminalLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: criminal litigation." path="/practice-areas/criminal-litigation" />
+      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Information about criminal matter representation, including defence proceedings and bail applications, from Falcon Lex Legal in Bengaluru." path="/practice-areas/criminal-litigation" />
 
       {/* =========================================================
           HERO — SAME AS CIVIL

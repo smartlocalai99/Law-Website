@@ -88,7 +88,7 @@ const faqs = [
 export default function ContractDrafting() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Contract Drafting in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: contract drafting." path="/practice-areas/contract-drafting" />
+      <Seo title="Contract Drafting & Review | Falcon Lex Legal" description="Learn about contract drafting and agreement review for individuals and businesses from Falcon Lex Legal, based in Bengaluru, Karnataka." path="/practice-areas/contract-drafting" />
       {/* Hero */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

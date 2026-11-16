@@ -82,7 +82,7 @@ export default function ReraLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="RERA Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: RERA litigation." path="/practice-areas/rera-litigation" />
+      <Seo title="RERA Litigation in Karnataka | Falcon Lex Legal" description="Information about RERA complaints, builder disputes and related proceedings in Karnataka from Falcon Lex Legal, a Bengaluru-based legal practice." path="/practice-areas/rera-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

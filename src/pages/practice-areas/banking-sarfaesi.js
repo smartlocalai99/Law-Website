@@ -82,7 +82,7 @@ const faqs = [
 export default function BankingSarfaesi() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Banking & SARFAESI in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Areas of practice: banking, recovery and SARFAESI-related matters." path="/practice-areas/banking-sarfaesi" />
+      <Seo title="Banking & SARFAESI Matters | Falcon Lex Legal" description="Information on banking disputes, recovery matters and SARFAESI proceedings handled by Falcon Lex Legal, a Bengaluru-based legal practice." path="/practice-areas/banking-sarfaesi" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden">
         <img

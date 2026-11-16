@@ -82,7 +82,7 @@ export default function CommercialLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: commercial litigation." path="/practice-areas/commercial-litigation" />
+      <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal assists with business, commercial and contractual disputes in Bengaluru, including proceedings before appropriate courts and forums." path="/practice-areas/commercial-litigation" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

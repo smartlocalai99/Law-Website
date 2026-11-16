@@ -28,7 +28,7 @@ export default function YashwanthProfile() {
 
   return (
     <>
-      <Seo title="Yashwanth Ovarsu in Bengaluru | Falcon Lex Legal" description="Advocate Yashwanth Ovarsu at Falcon Lex Legal, Bengaluru." path="/advocates/yashwanth-ovarsu" />
+      <Seo title="Yashwanth Ovarsu, Advocate | Falcon Lex Legal" description="Profile of Yashwanth Ovarsu, advocate at Falcon Lex Legal in Bengaluru, with a practice focused on litigation, dispute resolution and legal representation." path="/advocates/yashwanth-ovarsu" />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Seo
         title="Falcon Lex Legal | Law Firm & Advocates in Bengaluru"
-        description="Falcon Lex Legal is a legal practice based in Bengaluru, Karnataka. Areas of practice include civil and criminal litigation, property, RERA, commercial matters, banking and family law."
+        description="Falcon Lex Legal is a Bengaluru-based legal practice for civil and criminal litigation, property and RERA matters, commercial disputes, banking, family law and dispute resolution."
         path="/"
       />
 
@@ -25,6 +25,8 @@ export default function Home() {
           "@type": "LegalService",
           "name": "Falcon Lex Legal",
           "url": "https://www.falconlexlegal.in",
+          "@id": "https://www.falconlexlegal.in/#legalservice",
+          "image": "https://www.falconlexlegal.in/falcon-lex-legal-hero.png",
           "telephone": "+91 99012 78154",
           "email": "Falconlexlegal@gmail.com",
           "address": {
@@ -34,7 +36,11 @@ export default function Home() {
             "postalCode": "560001",
             "addressCountry": "IN"
           },
-          "openingHours": "Mo-Sa 10:00-20:00"
+          "openingHours": "Mo-Sa 10:00-20:00",
+          "areaServed": [
+            { "@type": "City", "name": "Bengaluru" },
+            { "@type": "AdministrativeArea", "name": "Karnataka" }
+          ]
         }) }} />
       </Head>
 

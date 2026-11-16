@@ -82,7 +82,7 @@ const faqs = [
 export default function FamilyMatrimonialLaw() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Family Law in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: family and matrimonial law." path="/practice-areas/family-matrimonial-law" />
+      <Seo title="Family & Matrimonial Law | Falcon Lex Legal" description="Explore family and matrimonial legal assistance in Bengaluru, including divorce, custody, maintenance and related disputes, from Falcon Lex Legal." path="/practice-areas/family-matrimonial-law" />
 
       {/* =========================================================
           HERO

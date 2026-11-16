@@ -82,7 +82,7 @@ export default function RealEstatePropertyLaw() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Property Law in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: real estate and property law." path="/practice-areas/real-estate-property-law" />
+      <Seo title="Real Estate & Property Law | Falcon Lex Legal" description="Legal assistance with property transactions, title review and property disputes from Falcon Lex Legal, a Bengaluru-based practice." path="/practice-areas/real-estate-property-law" />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img

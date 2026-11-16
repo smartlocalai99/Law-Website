@@ -28,7 +28,7 @@ export default function KishanProfile() {
 
   return (
     <>
-      <Seo title="Kishan Shetty in Bengaluru | Falcon Lex Legal" description="Advocate Kishan Shetty S.R. at Falcon Lex Legal, Bengaluru." path="/advocates/kishan-shetty" />
+      <Seo title="Kishan Shetty S.R., Advocate | Falcon Lex Legal" description="Profile of advocate Kishan Shetty S.R. at Falcon Lex Legal in Bengaluru, with work in litigation, real estate and dispute resolution." path="/advocates/kishan-shetty" />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",

@@ -72,7 +72,7 @@ const faqs = [
 export default function LegalAdvisory() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
-      <Seo title="Legal Advisory in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal, Bengaluru. Area of practice: legal advisory." path="/practice-areas/legal-advisory" />
+      <Seo title="Legal Advisory & Document Review | Falcon Lex Legal" description="Legal consultations and document review for individuals and businesses from Falcon Lex Legal, a Bengaluru-based practice. Consultations are by appointment." path="/practice-areas/legal-advisory" />
 
       {/* =========================================================
           HERO
