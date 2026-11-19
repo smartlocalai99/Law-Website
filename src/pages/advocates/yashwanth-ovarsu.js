@@ -1,6 +1,8 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Head from "next/head";
+import Link from "next/link";
+import JsonLd from "../../components/JsonLd";
+import { personSchema, breadcrumbSchema } from "../../lib/schema";
 import Seo from "../../components/Seo";
 
 import {
@@ -29,16 +31,7 @@ export default function YashwanthProfile() {
   return (
     <>
       <Seo title="Yashwanth Ovarsu, Advocate | Falcon Lex Legal" description="Profile of Yashwanth Ovarsu, advocate at Falcon Lex Legal in Bengaluru, with a practice focused on litigation, dispute resolution and legal representation." path="/advocates/yashwanth-ovarsu" />
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Yashwanth Ovarsu",
-          "url": "https://www.falconlexlegal.in/advocates/yashwanth-ovarsu",
-          "jobTitle": "Advocate",
-          "worksFor": { "@type": "Organization", "name": "Falcon Lex Legal" }
-        }) }} />
-      </Head>
+      <JsonLd data={[personSchema("yashwanth"), breadcrumbSchema([{ name: "Yashwanth Ovarsu", path: "/advocates/yashwanth-ovarsu" }])]} />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">
@@ -103,7 +96,7 @@ export default function YashwanthProfile() {
 
                 <img
                   src="/yashwanth.png"
-                  alt="Yashwanth Ovarsu - Advocate"
+                  alt="Yashwanth Ovarsu, Advocate at Falcon Lex Legal, Bengaluru"
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />
 
@@ -357,7 +350,7 @@ export default function YashwanthProfile() {
         <FaBalanceScale className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Civil Litigation
+          <Link href="/practice-areas/civil-litigation">Civil Litigation</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -375,7 +368,7 @@ export default function YashwanthProfile() {
         <FaShieldAlt className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Criminal Litigation
+          <Link href="/practice-areas/criminal-litigation">Criminal Litigation</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -393,7 +386,7 @@ export default function YashwanthProfile() {
         <FaHome className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Real Estate &amp; Property Law
+          <Link href="/practice-areas/real-estate-property-law">Real Estate &amp; Property Law</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -411,7 +404,7 @@ export default function YashwanthProfile() {
         <FaBuilding className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          RERA Matters
+          <Link href="/practice-areas/rera-litigation">RERA Matters</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -429,7 +422,7 @@ export default function YashwanthProfile() {
         <FaFileContract className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Commercial Litigation
+          <Link href="/practice-areas/commercial-litigation">Commercial Litigation</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -447,7 +440,7 @@ export default function YashwanthProfile() {
         <FaGavel className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Banking &amp; Financial Matters
+          <Link href="/practice-areas/banking-sarfaesi">Banking &amp; Financial Matters</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -465,7 +458,7 @@ export default function YashwanthProfile() {
         <FaUsers className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Family &amp; Matrimonial Law
+          <Link href="/practice-areas/family-matrimonial-law">Family &amp; Matrimonial Law</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -501,7 +494,7 @@ export default function YashwanthProfile() {
         <FaHandshake className="text-base text-[#B08D57]" />
 
         <h3 className="mt-3 font-serif text-lg text-white">
-          Arbitration &amp; Mediation
+          <Link href="/practice-areas/arbitration-mediation">Arbitration &amp; Mediation</Link>
         </h3>
 
         <p className="mt-1.5 text-[11px] leading-5 text-[#AFAFAF]">
@@ -640,7 +633,7 @@ export default function YashwanthProfile() {
                 </p>
 
                 <p className="mt-1.5 text-sm text-[#111111]">
-                  +91 9901278154
+                  +91 99012 78154
                 </p>
 
               </a>
@@ -649,7 +642,7 @@ export default function YashwanthProfile() {
               {/* WhatsApp */}
 
               <a
-                href="https://wa.me/918310790921"
+                href="https://wa.me/919901278154"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-black/10 bg-white p-5 transition-colors hover:border-[#B08D57]"
@@ -662,7 +655,7 @@ export default function YashwanthProfile() {
                 </p>
 
                 <p className="mt-1.5 text-sm text-[#111111]">
-                  +91 83107 90921
+                  +91 99012 78154
                 </p>
 
               </a>

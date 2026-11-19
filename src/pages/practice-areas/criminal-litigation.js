@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 export default function CriminalLitigation() {
   
@@ -59,6 +61,21 @@ export default function CriminalLitigation() {
         "Assistance may be available for appropriate regular bail, anticipatory bail and related proceedings depending on the facts, stage and circumstances of the matter.",
     },
     {
+      question: "Can an FIR be quashed by the High Court?",
+      answer:
+        "In appropriate cases, a petition may be filed before the High Court of Karnataka under Section 528 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (formerly Section 482 CrPC) to quash an FIR or criminal proceedings. Whether quashing is available depends on the allegations, the stage of the case and the applicable law, and it is decided by the court in each case.",
+    },
+    {
+      question: "Can a matrimonial FIR be quashed if the parties settle?",
+      answer:
+        "In B.S. Joshi v. State of Haryana (2003) and Gian Singh v. State of Punjab (2012), the Supreme Court held that the High Court may quash criminal proceedings arising from matrimonial disputes where the parties have genuinely settled, even if the offence is not compoundable. The power is discretionary, and the court considers the nature of the allegations and the terms of the settlement.",
+    },
+    {
+      question: "Can I apply for anticipatory bail in a matrimonial case?",
+      answer:
+        "A person who apprehends arrest for a non-bailable offence may apply for anticipatory bail before the Sessions Court or the High Court under Section 482 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (formerly Section 438 CrPC). Whether anticipatory bail is granted depends on the allegations, the stage of the case and the court's assessment.",
+    },
+    {
       question: "Do you handle criminal cases in Bengaluru?",
       answer:
         "Yes. Falcon Lex Legal is based in Bengaluru and assists clients in criminal matters, including bail and anticipatory bail applications, before the appropriate courts and forums. The suitable forum depends on the nature of the offence and the stage of proceedings.",
@@ -67,7 +84,8 @@ export default function CriminalLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Criminal Litigation in Bengaluru | Falcon Lex Legal" description="Information about criminal matter representation, including defence proceedings and bail applications, from Falcon Lex Legal in Bengaluru." path="/practice-areas/criminal-litigation" />
+      <Seo title="Criminal & FIR Quashing Lawyers Bangalore | Falcon Lex Legal" description="Criminal lawyers in Bengaluru for bail, anticipatory bail, trials and petitions to quash FIRs before the High Court of Karnataka. Consultations by appointment." path="/practice-areas/criminal-litigation" />
+      <JsonLd data={practiceAreaSchemas({ name: "Criminal Litigation", path: "/practice-areas/criminal-litigation", description: "Criminal lawyers in Bengaluru for bail, anticipatory bail, trials and petitions to quash FIRs before the High Court of Karnataka. Consultations by appointment.", faqs })} />
 
       {/* =========================================================
           HERO — SAME AS CIVIL
@@ -76,7 +94,7 @@ export default function CriminalLitigation() {
 
         <img
           src="/criminal-litigation.jpg"
-          alt="Criminal Litigation"
+          alt="Criminal law book with a judge's gavel and handcuffs"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -100,13 +118,13 @@ export default function CriminalLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Criminal Litigation Advocates in Bengaluru
+              Criminal Lawyers &amp; Advocates in Bangalore
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
-              Representation in criminal proceedings, bail matters, trials
-              and related court proceedings with a structured and practical
-              legal approach.
+              Representation in criminal proceedings, bail matters, trials,
+              petitions to quash FIRs before the High Court and related court
+              proceedings with a structured and practical legal approach.
             </p>
 
           </div>
@@ -154,7 +172,9 @@ export default function CriminalLitigation() {
                   Falcon Lex Legal provides legal assistance and representation
                   in criminal matters from initial case assessment and drafting
                   through court proceedings, bail applications, trials and
-                  appropriate appellate or revision proceedings.
+                  appropriate appellate or revision proceedings. Advocates
+                  <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both include criminal litigation in their
+                  practice.
                 </p>
 
               </div>
@@ -304,7 +324,7 @@ export default function CriminalLitigation() {
         </p>
 
         <h2 className="mt-4 font-serif text-3xl leading-tight text-[#F5F1E8] sm:text-4xl">
-          Strategic Defence and Effective Criminal Representation
+          Quashing of FIRs in the High Court of Karnataka
         </h2>
       </div>
 
@@ -314,6 +334,17 @@ export default function CriminalLitigation() {
           requirements, documentation and legal issues. A careful review
           helps identify the relevant facts, issues and available legal
           remedies.
+        </p>
+
+        <p>
+          The High Court of Karnataka may quash an FIR or criminal
+          proceedings in exercise of its inherent powers under Section 528
+          of the Bharatiya Nagarik Suraksha Sanhita, 2023 (formerly Section
+          482 CrPC), in appropriate cases. This may include cases where the
+          allegations do not disclose an offence, where the proceedings are
+          an abuse of process, or where parties have settled certain
+          disputes, including some <Link href="/practice-areas/family-matrimonial-law">matrimonial disputes</Link>. Each petition
+          depends on its facts and the applicable law.
         </p>
 
         <p>

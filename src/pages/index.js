@@ -1,4 +1,5 @@
-import Head from "next/head";
+import JsonLd from "../components/JsonLd";
+import { legalServiceSchema, websiteSchema } from "../lib/schema";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Herosection from "../components/Herosection";
@@ -14,35 +15,12 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Falcon Lex Legal | Law Firm & Advocates in Bengaluru"
-        description="Falcon Lex Legal is a Bengaluru-based legal practice for civil and criminal litigation, property and RERA matters, commercial disputes, banking, family law and dispute resolution."
+        title="Falcon Lex Legal | RERA & Divorce Lawyers in Bangalore"
+        description="Falcon Lex Legal is a Bengaluru law firm for RERA complaints, builder disputes, divorce and matrimonial cases, and civil and criminal litigation across Karnataka."
         path="/"
       />
 
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LegalService",
-          "name": "Falcon Lex Legal",
-          "url": "https://www.falconlexlegal.in",
-          "@id": "https://www.falconlexlegal.in/#legalservice",
-          "image": "https://www.falconlexlegal.in/falcon-lex-legal-hero.png",
-          "telephone": "+91 99012 78154",
-          "email": "Falconlexlegal@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "#135-136, 1st Floor, Plazzo Retail Mall, Commercial Street",
-            "addressLocality": "Bengaluru",
-            "postalCode": "560001",
-            "addressCountry": "IN"
-          },
-          "openingHours": "Mo-Sa 10:00-20:00",
-          "areaServed": [
-            { "@type": "City", "name": "Bengaluru" },
-            { "@type": "AdministrativeArea", "name": "Karnataka" }
-          ]
-        }) }} />
-      </Head>
+      <JsonLd data={[legalServiceSchema(), websiteSchema()]} />
 
       <Header />
       <Herosection />

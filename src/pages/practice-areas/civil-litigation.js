@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 export default function CivilLitigation() {
   
@@ -58,6 +60,16 @@ export default function CivilLitigation() {
       answer:
         "Assistance may be available for appropriate civil appeals, revisions and related proceedings depending on the nature and stage of the matter.",
     },
+    {
+      question: "When can an injunction suit be filed?",
+      answer:
+        "An injunction suit may be filed where a person needs the court to prevent interference with a legal right, for example to protect possession of property or to stop an encroachment. Temporary injunctions may be sought while the suit is pending. The relief available depends on the facts, documents and applicable law.",
+    },
+      {
+        question: "What must be shown to get a temporary injunction?",
+        answer:
+          "In Dalpat Kumar v. Prahlad Singh (1992), the Supreme Court held that a party seeking a temporary injunction must generally show a prima facie case, that the balance of convenience is in their favour, and that they would suffer irreparable injury if the injunction is refused. All three are considered together, and the decision rests with the court.",
+      },
       {
         question: "Do you handle civil cases in Bengaluru?",
         answer:
@@ -67,7 +79,8 @@ export default function CivilLitigation() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Civil Litigation in Bengaluru | Falcon Lex Legal" description="Learn about civil dispute representation from Falcon Lex Legal in Bengaluru, including recovery matters and related proceedings before appropriate courts and forums." path="/practice-areas/civil-litigation" />
+      <Seo title="Civil & Injunction Suit Lawyers Bangalore | Falcon Lex Legal" description="Civil litigation lawyers in Bengaluru for injunction suits, recovery claims, specific performance, partition and declaratory suits before Karnataka courts." path="/practice-areas/civil-litigation" />
+      <JsonLd data={practiceAreaSchemas({ name: "Civil Litigation", path: "/practice-areas/civil-litigation", description: "Civil litigation lawyers in Bengaluru for injunction suits, recovery claims, specific performance, partition and declaratory suits before Karnataka courts.", faqs })} />
 
       {/* =========================================================
           HERO — KEEP AS IT IS
@@ -76,7 +89,7 @@ export default function CivilLitigation() {
 
         <img
           src="/civil-litigation.jpg"
-          alt="Civil Litigation"
+          alt="Lawyer's desk with a gavel, case files, scales of justice and a Lady Justice statue, representing civil litigation"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -100,12 +113,13 @@ export default function CivilLitigation() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Civil Litigation Advocates in Bengaluru
+              Civil Litigation Lawyers &amp; Advocates in Bangalore
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
-              Representation in civil disputes, recovery matters and related
-              court proceedings with a structured and practical legal approach.
+              Representation in civil disputes, injunction suits, recovery
+              matters and related court proceedings with a structured and
+              practical legal approach.
             </p>
 
           </div>
@@ -152,7 +166,8 @@ export default function CivilLitigation() {
             Falcon Lex Legal provides legal assistance and representation
             in civil disputes from initial case assessment and drafting
             through court proceedings, interim applications and
-            appropriate appellate proceedings.
+            appropriate appellate proceedings. Advocates <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and
+            <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both include civil litigation in their practice.
           </p>
 
         </div>
@@ -296,7 +311,7 @@ export default function CivilLitigation() {
         </p>
 
         <h2 className="mt-4 font-serif text-3xl leading-tight text-[#F5F1E8] sm:text-4xl">
-          Our Approach to Civil Litigation
+          Injunction Suits and Interim Relief in Bengaluru
         </h2>
       </div>
 
@@ -306,6 +321,16 @@ export default function CivilLitigation() {
           procedural requirements and competing legal claims. A careful
           review helps identify the relevant issues and available
           remedies.
+        </p>
+
+        <p>
+          An injunction suit asks the court to restrain a party from doing
+          something, such as interfering with <Link href="/practice-areas/real-estate-property-law">possession of property</Link>,
+          encroaching on land or breaching a contract. Permanent
+          injunctions are governed by the Specific Relief Act, 1963, and
+          temporary injunctions during a suit may be sought under Order
+          XXXIX of the Code of Civil Procedure, 1908. Whether relief is
+          granted depends on the facts and the court&apos;s assessment.
         </p>
 
         <p>

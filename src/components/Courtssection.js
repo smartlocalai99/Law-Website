@@ -268,7 +268,9 @@ export default function CourtsSection() {
 
               <img
                 src="/karnataka-map.webp"
-                alt="Karnataka map showing court locations"
+                alt="District map of Karnataka with court locations marked"
+                width={800}
+                height={1200}
                 loading="lazy"
                 decoding="async"
                 className="relative z-0 block h-auto w-full select-none object-contain"

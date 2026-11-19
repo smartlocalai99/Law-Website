@@ -25,6 +25,7 @@ const practiceAreas = [
       "Representation in civil disputes, recovery matters and related court proceedings.",
     icon: Scale,
     image: "/civil-litigation.jpg",
+    alt: "Lawyer's desk with a gavel, case files, scales of justice and a Lady Justice statue, representing civil litigation",
     slug: "civil-litigation",
   },
   {
@@ -33,6 +34,7 @@ const practiceAreas = [
       "Legal representation in criminal matters, defence proceedings and related cases.",
     icon: Shield,
     image: "/criminal-litigation.jpg",
+    alt: "Criminal law book with a judge's gavel and handcuffs",
     slug: "criminal-litigation",
   },
   {
@@ -41,6 +43,7 @@ const practiceAreas = [
       "Legal assistance relating to property transactions, ownership, disputes and documentation.",
     icon: Home,
     image: "/real-estate.jpg",
+    alt: "Model house and judge's gavel in front of law books, representing real estate litigation",
     slug: "real-estate-property-law",
   },
   {
@@ -49,6 +52,7 @@ const practiceAreas = [
       "Representation in disputes and proceedings arising under RERA.",
     icon: Building2,
     image: "/rera-litigation.jpg",
+    alt: "Lawyer signing property documents beside a gavel, with apartment buildings in the background",
     slug: "rera-litigation",
   },
   {
@@ -57,6 +61,7 @@ const practiceAreas = [
       "Legal representation in business, commercial and contractual disputes.",
     icon: BriefcaseBusiness,
     image: "/commercial-litigation.jpg",
+    alt: "Two people signing a commercial agreement at a desk with a gavel and scales of justice",
     slug: "commercial-litigation",
   },
   {
@@ -65,6 +70,7 @@ const practiceAreas = [
       "Representation in banking disputes, recovery matters and SARFAESI-related proceedings.",
     icon: Landmark,
     image: "/banking-sarfaesi.jpg",
+    alt: "Banking Law and SARFAESI Act 2002 books beside a demand notice, gavel, model house and keys",
     slug: "banking-sarfaesi",
   },
   {
@@ -73,6 +79,7 @@ const practiceAreas = [
       "Legal assistance in matrimonial, family and related disputes.",
     icon: Users,
     image: "/family-matrimonial.jpg",
+    alt: "Wooden family figures, model house and wedding rings beside law books, representing divorce and matrimonial law",
     slug: "family-matrimonial-law",
   },
   {
@@ -81,6 +88,7 @@ const practiceAreas = [
       "Preparation and review of contracts, agreements and legal documents.",
     icon: FileText,
     image: "/contract-drafting.jpg",
+    alt: "Lawyer and client reviewing a contract agreement at a desk with a gavel",
     slug: "contract-drafting",
   },
   {
@@ -89,6 +97,7 @@ const practiceAreas = [
       "Representation and assistance in alternative dispute resolution matters.",
     icon: Handshake,
     image: "/arbitration-mediation.jpg",
+    alt: "Arbitration and mediation services at Falcon Lex Legal, Bengaluru",
     slug: "arbitration-mediation",
   },
   {
@@ -97,6 +106,7 @@ const practiceAreas = [
       "Strategic legal advice tailored to individual and business requirements.",
     icon: BriefcaseBusiness,
     image: "/legal-advisory.jpg",
+    alt: "Lawyer advising a client across a desk with a contract, gavel and scales of justice",
     slug: "legal-advisory",
   },
 ];
@@ -208,7 +218,7 @@ export default function Practiceareas() {
                     <div className="relative h-[155px] w-full shrink-0 overflow-hidden">
                       <img
                         src={area.image}
-                        alt={area.title}
+                        alt={area.alt || area.title}
                         loading="lazy"
                         decoding="async"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

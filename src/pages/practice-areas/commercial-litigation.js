@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 export default function CommercialLitigation() {
   const matters = [
@@ -83,11 +85,12 @@ export default function CommercialLitigation() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
       <Seo title="Commercial Litigation in Bengaluru | Falcon Lex Legal" description="Falcon Lex Legal assists with business, commercial and contractual disputes in Bengaluru, including proceedings before appropriate courts and forums." path="/practice-areas/commercial-litigation" />
+      <JsonLd data={practiceAreaSchemas({ name: "Commercial Litigation", path: "/practice-areas/commercial-litigation", description: "Falcon Lex Legal assists with business, commercial and contractual disputes in Bengaluru, including proceedings before appropriate courts and forums.", faqs })} />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/commercial-litigation.jpg"
-          alt="Commercial Litigation"
+          alt="Two people signing a commercial agreement at a desk with a gavel and scales of justice"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -157,7 +160,10 @@ export default function CommercialLitigation() {
                 <p className="mt-6 text-[15px] leading-8 text-[#444444]">
                   Each matter is assessed based on the relevant agreements,
                   transaction records, correspondence, financial documents and
-                  circumstances of the dispute.
+                  circumstances of the dispute. Advocates <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both
+                  include commercial litigation in their practice, and
+                  agreements can also be reviewed before a dispute arises
+                  through our <Link href="/practice-areas/contract-drafting">contract drafting and review</Link> service.
                 </p>
               </div>
             </div>

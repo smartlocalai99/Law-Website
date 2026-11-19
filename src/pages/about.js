@@ -2,11 +2,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
+import { breadcrumbSchema } from "../lib/schema";
 
 export default function About() {
   return (
     <>
       <Seo title="About the Firm | Falcon Lex Legal, Bengaluru" description="Learn about Falcon Lex Legal, a Bengaluru-based practice focused on litigation, property matters, dispute resolution and legal representation across Karnataka." path="/about" />
+      <JsonLd data={breadcrumbSchema([{ name: "About", path: "/about" }])} />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">
@@ -21,7 +24,10 @@ export default function About() {
   {/* Hero Image */}
   <img
     src="/falcon-lex-legal-hero.png"
-    alt="Falcon Lex Legal Bengaluru law firm"
+    alt="Falcon Lex Legal office reception in Bengaluru, with the firm name on the wall"
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
     className="absolute inset-0 h-full w-full object-cover object-center"
   />
 
