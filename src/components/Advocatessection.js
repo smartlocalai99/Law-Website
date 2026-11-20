@@ -10,7 +10,7 @@ const advocates = [
     href: "/advocates/yashwanth-ovarsu",
   },
   {
-    name: "Kishan Shetty S.R",
+    name: "Kishan Shetty S.R.",
     designation: "Advocate",
     initials: "KS",
     image: "/kishan-shetty.png",

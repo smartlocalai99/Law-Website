@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 const matters = [
   "Commercial agreements",
@@ -89,11 +91,12 @@ export default function ContractDrafting() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
       <Seo title="Contract Drafting & Review | Falcon Lex Legal" description="Learn about contract drafting and agreement review for individuals and businesses from Falcon Lex Legal, based in Bengaluru, Karnataka." path="/practice-areas/contract-drafting" />
+      <JsonLd data={practiceAreaSchemas({ name: "Contract Drafting & Review", path: "/practice-areas/contract-drafting", description: "Learn about contract drafting and agreement review for individuals and businesses from Falcon Lex Legal, based in Bengaluru, Karnataka.", faqs })} />
       {/* Hero */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/contract-drafting.jpg"
-          alt="Contract Drafting and Legal Agreements"
+          alt="Lawyer and client reviewing a contract agreement at a desk with a gavel"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -159,7 +162,10 @@ export default function ContractDrafting() {
               <p>
                 Particular attention is given to important provisions such as
                 payment obligations, timelines, confidentiality, liability,
-                termination and dispute resolution.
+                termination and dispute resolution. The practice of advocate
+                <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> includes contract drafting and legal opinions. Where a
+                contract dispute has already arisen, see our
+                <Link href="/practice-areas/commercial-litigation">commercial litigation</Link> practice.
               </p>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 const matters = [
   "Commercial arbitration",
@@ -73,6 +75,7 @@ export default function ArbitrationMediation() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
       <Seo title="Arbitration & Mediation | Falcon Lex Legal" description="Explore arbitration and mediation support from Falcon Lex Legal in Bengaluru, including representation and assistance in alternative dispute resolution matters." path="/practice-areas/arbitration-mediation" />
+      <JsonLd data={practiceAreaSchemas({ name: "Arbitration & Mediation", path: "/practice-areas/arbitration-mediation", description: "Explore arbitration and mediation support from Falcon Lex Legal in Bengaluru, including representation and assistance in alternative dispute resolution matters.", faqs })} />
 
       {/* =========================================================
           HERO
@@ -81,7 +84,7 @@ export default function ArbitrationMediation() {
 
         <img
           src="/arbitration-mediation.jpg"
-          alt="Arbitration & Mediation"
+          alt="Arbitration and mediation services at Falcon Lex Legal, Bengaluru"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -159,7 +162,8 @@ export default function ArbitrationMediation() {
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
                   Each matter is assessed based on the underlying agreement,
                   dispute-resolution clause, facts, documents and applicable
-                  legal framework.
+                  legal framework. Advocates <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both include
+                  arbitration and mediation in their practice.
                 </p>
 
               </div>

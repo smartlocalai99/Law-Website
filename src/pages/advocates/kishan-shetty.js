@@ -1,6 +1,8 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Head from "next/head";
+import Link from "next/link";
+import JsonLd from "../../components/JsonLd";
+import { personSchema, breadcrumbSchema } from "../../lib/schema";
 import Seo from "../../components/Seo";
 
 import {
@@ -29,16 +31,7 @@ export default function KishanProfile() {
   return (
     <>
       <Seo title="Kishan Shetty S.R., Advocate | Falcon Lex Legal" description="Profile of advocate Kishan Shetty S.R. at Falcon Lex Legal in Bengaluru, with work in litigation, real estate and dispute resolution." path="/advocates/kishan-shetty" />
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Kishan Shetty S.R.",
-          "url": "https://www.falconlexlegal.in/advocates/kishan-shetty",
-          "jobTitle": "Advocate",
-          "worksFor": { "@type": "Organization", "name": "Falcon Lex Legal" }
-        }) }} />
-      </Head>
+      <JsonLd data={[personSchema("kishan"), breadcrumbSchema([{ name: "Kishan Shetty S.R.", path: "/advocates/kishan-shetty" }])]} />
       <Header />
 
       <main className="min-h-screen bg-white text-[#111111]">
@@ -101,7 +94,7 @@ export default function KishanProfile() {
 
                 <img
                   src="/kishan-shetty.png"
-                  alt="Kishan Shetty S.R. - Advocate"
+                  alt="Kishan Shetty S.R., Advocate at Falcon Lex Legal, Bengaluru"
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />
 
@@ -339,7 +332,7 @@ export default function KishanProfile() {
                 <FaBalanceScale className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Civil Litigation
+                  <Link href="/practice-areas/civil-litigation">Civil Litigation</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -356,7 +349,7 @@ export default function KishanProfile() {
                 <FaShieldAlt className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Criminal Litigation
+                  <Link href="/practice-areas/criminal-litigation">Criminal Litigation</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -374,7 +367,7 @@ export default function KishanProfile() {
                 <FaHome className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Real Estate &amp; Property Law
+                  <Link href="/practice-areas/real-estate-property-law">Real Estate &amp; Property Law</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -392,7 +385,7 @@ export default function KishanProfile() {
                 <FaBuilding className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  RERA Litigation &amp; Compliance
+                  <Link href="/practice-areas/rera-litigation">RERA Litigation &amp; Compliance</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -410,7 +403,7 @@ export default function KishanProfile() {
                 <FaFileContract className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Commercial Litigation
+                  <Link href="/practice-areas/commercial-litigation">Commercial Litigation</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -428,7 +421,7 @@ export default function KishanProfile() {
                 <FaGavel className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Banking &amp; SARFAESI
+                  <Link href="/practice-areas/banking-sarfaesi">Banking &amp; SARFAESI</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -446,7 +439,7 @@ export default function KishanProfile() {
                 <FaUsers className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Family &amp; Matrimonial Law
+                  <Link href="/practice-areas/family-matrimonial-law">Family &amp; Matrimonial Law</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">
@@ -482,7 +475,7 @@ export default function KishanProfile() {
                 <FaHandshake className="text-xl text-[#B08D57]" />
 
                 <h3 className="mt-5 font-serif text-xl">
-                  Arbitration &amp; Mediation
+                  <Link href="/practice-areas/arbitration-mediation">Arbitration &amp; Mediation</Link>
                 </h3>
 
                 <p className="mt-3 text-xs leading-6 text-[#BDBDBD]">

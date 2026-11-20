@@ -44,7 +44,7 @@ export default function AboutSection() {
   <div className="relative z-10 h-[320px] w-full overflow-hidden">
     <img
       src="/falcon-lex-legal-hero.png"
-      alt="Falcon Lex Legal office reception"
+      alt="Reception desk at the Falcon Lex Legal office in Bengaluru"
       loading="lazy"
       decoding="async"
       className="h-full w-full object-cover object-center"

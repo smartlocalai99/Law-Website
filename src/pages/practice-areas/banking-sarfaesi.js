@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 const matters = [
   "SARFAESI proceedings",
@@ -83,11 +85,12 @@ export default function BankingSarfaesi() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
       <Seo title="Banking & SARFAESI Matters | Falcon Lex Legal" description="Information on banking disputes, recovery matters and SARFAESI proceedings handled by Falcon Lex Legal, a Bengaluru-based legal practice." path="/practice-areas/banking-sarfaesi" />
+      <JsonLd data={practiceAreaSchemas({ name: "Banking & SARFAESI Matters", path: "/practice-areas/banking-sarfaesi", description: "Information on banking disputes, recovery matters and SARFAESI proceedings handled by Falcon Lex Legal, a Bengaluru-based legal practice.", faqs })} />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden">
         <img
           src="/banking-sarfaesi.jpg"
-          alt="Banking & SARFAESI"
+          alt="Banking Law and SARFAESI Act 2002 books beside a demand notice, gavel, model house and keys"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -153,7 +156,9 @@ export default function BankingSarfaesi() {
               <p>
                 Each matter is assessed on the basis of the loan documents,
                 account records, security documents, notices, correspondence
-                and the specific circumstances involved.
+                and the specific circumstances involved. Advocates <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and
+                <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both include banking and recovery matters in their
+                practice.
               </p>
             </div>
           </div>

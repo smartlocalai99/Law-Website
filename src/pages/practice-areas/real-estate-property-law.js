@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 export default function RealEstatePropertyLaw() {
   const matters = [
@@ -74,6 +76,21 @@ export default function RealEstatePropertyLaw() {
         "Depending on the facts and the willingness of the parties, negotiation, mediation or other settlement mechanisms may be explored before or during litigation.",
     },
     {
+      question: "What does a real estate litigation lawyer handle?",
+      answer:
+        "A real estate litigation lawyer handles court proceedings over property, such as title and ownership disputes, injunction suits, partition suits, specific performance of sale agreements, possession and eviction matters, and related appeals. Builder disputes over registered projects are generally pursued before K-RERA under the RERA Act.",
+    },
+    {
+      question: "Can I file a civil suit against a builder instead of going to RERA?",
+      answer:
+        "Section 79 of the RERA Act bars civil courts from hearing matters that the RERA authority or its adjudicating officer is empowered to decide, such as refund, interest and compensation claims for a registered project. Reliefs that RERA cannot grant, such as declarations of title or certain injunctions, may still be sought before a civil court. The correct forum depends on the relief sought.",
+    },
+    {
+      question: "What documents are checked in property due diligence in Bangalore?",
+      answer:
+        "Due diligence usually involves reviewing the title deeds and the chain of previous ownership, encumbrance certificates, the khata and property tax records from the local municipal authority, approved building plans, and any sale agreement or power of attorney involved. For apartments, the project's RERA registration and approvals are also reviewed. The exact documents depend on the type of property and the transaction.",
+    },
+    {
       question: "Do you handle property matters in Bengaluru?",
       answer:
         "Yes. Falcon Lex Legal is based in Bengaluru and assists clients with property transactions, title review and property disputes. Documents can be reviewed by appointment at our office. The suitable court depends on the nature of the dispute and where the property is situated.",
@@ -82,12 +99,13 @@ export default function RealEstatePropertyLaw() {
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#F5F1E8]">
-      <Seo title="Real Estate & Property Law | Falcon Lex Legal" description="Legal assistance with property transactions, title review and property disputes from Falcon Lex Legal, a Bengaluru-based practice." path="/practice-areas/real-estate-property-law" />
+      <Seo title="Real Estate Litigation Lawyers Bangalore | Falcon Lex Legal" description="Real estate litigation lawyers in Bengaluru for title and ownership disputes, possession, partition, injunctions and property due diligence in Karnataka." path="/practice-areas/real-estate-property-law" />
+      <JsonLd data={practiceAreaSchemas({ name: "Real Estate & Property Law", path: "/practice-areas/real-estate-property-law", description: "Real estate litigation lawyers in Bengaluru for title and ownership disputes, possession, partition, injunctions and property due diligence in Karnataka.", faqs })} />
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#0A0A0A]">
         <img
           src="/real-estate.jpg"
-          alt="Real Estate & Property Law"
+          alt="Model house and judge's gavel in front of law books, representing real estate litigation"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -110,13 +128,13 @@ export default function RealEstatePropertyLaw() {
             </p>
 
             <h1 className="mt-4 font-serif text-5xl leading-tight text-[#F5F1E8] sm:text-6xl lg:text-7xl">
-              Real Estate & Property Law Advocates in Bengaluru
+              Real Estate Litigation Lawyers in Bangalore
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#D0D6D9] sm:text-lg">
-              Legal assistance in property transactions, title matters, due
-              diligence, documentation, ownership disputes and other
-              real estate-related matters.
+              Legal assistance in property disputes, title and ownership
+              matters, possession, partition, injunction suits, due diligence,
+              documentation and other real estate-related matters.
             </p>
           </div>
         </div>
@@ -133,7 +151,7 @@ export default function RealEstatePropertyLaw() {
               </p>
 
               <h2 className="mt-4 font-serif text-4xl leading-tight text-[#0A0A0A] sm:text-5xl">
-                Property Transactions and Disputes in Bengaluru
+                Real Estate Litigation and Property Disputes in Bengaluru
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -160,6 +178,21 @@ export default function RealEstatePropertyLaw() {
                   dispute resolution and litigation support, depending on the
                   requirements of each matter.
                 </p>
+
+                <p className="mt-6 text-[15px] leading-8 text-[#444444]">
+                  Real estate litigation in Bangalore commonly involves suits
+                  for declaration of title, <Link href="/practice-areas/civil-litigation">injunction suits</Link> to protect
+                  possession, partition suits, specific performance of sale
+                  agreements and recovery of possession. Such suits are
+                  generally filed in the court where the property is situated,
+                  such as the City Civil Courts in Bengaluru or the courts at
+                  Devanahalli, Nelamangala, Anekal and Hosakote. Disputes with builders
+                  over registered projects, such as delayed possession or
+                  refunds, are generally addressed under the RERA Act before
+                  K-RERA, which is covered by our <Link href="/practice-areas/rera-litigation">RERA litigation practice</Link>.
+                  Advocates <Link href="/advocates/kishan-shetty">Kishan Shetty S.R.</Link> and <Link href="/advocates/yashwanth-ovarsu">Yashwanth Ovarsu</Link> both include real estate and property
+                  law in their practice.
+                </p>
               </div>
             </div>
 
@@ -170,7 +203,7 @@ export default function RealEstatePropertyLaw() {
               </p>
 
               <h2 className="mt-1 font-serif text-3xl leading-tight text-white sm:text-4xl">
-                Property Matters
+                Property Disputes &amp; Transactions
               </h2>
 
               <div className="mt-7 h-px w-16 bg-[#C5A45D]" />
@@ -251,7 +284,7 @@ export default function RealEstatePropertyLaw() {
               </p>
 
               <h2 className="mt-4 font-serif text-3xl leading-tight text-[#F5F1E8] sm:text-4xl">
-                Careful Review. Clear Property Advice.
+                Careful Review in Property Litigation and Transactions
               </h2>
             </div>
 

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import JsonLd from "@/components/JsonLd";
+import { practiceAreaSchemas } from "@/lib/schema";
 
 const matters = [
   "General legal consultations",
@@ -73,6 +75,7 @@ export default function LegalAdvisory() {
   return (
     <main className="min-h-screen bg-white text-[#0A0A0A]">
       <Seo title="Legal Advisory & Document Review | Falcon Lex Legal" description="Legal consultations and document review for individuals and businesses from Falcon Lex Legal, a Bengaluru-based practice. Consultations are by appointment." path="/practice-areas/legal-advisory" />
+      <JsonLd data={practiceAreaSchemas({ name: "Legal Advisory", path: "/practice-areas/legal-advisory", description: "Legal consultations and document review for individuals and businesses from Falcon Lex Legal, a Bengaluru-based practice. Consultations are by appointment.", faqs })} />
 
       {/* =========================================================
           HERO
@@ -81,7 +84,7 @@ export default function LegalAdvisory() {
 
         <img
           src="/legal-advisory.jpg"
-          alt="Legal Advisory"
+          alt="Lawyer advising a client across a desk with a contract, gavel and scales of justice"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -163,7 +166,10 @@ export default function LegalAdvisory() {
                 <p className="mt-5 text-[14px] leading-7 text-[#444444]">
                   Each matter is assessed based on the relevant facts,
                   documents, agreements and applicable legal framework to
-                  provide focused and practical legal guidance.
+                  provide focused and practical legal guidance. Property
+                  documents can also be reviewed as part of our
+                  <Link href="/practice-areas/real-estate-property-law">property due diligence</Link> work, and agreements through
+                  <Link href="/practice-areas/contract-drafting">contract drafting and review</Link>.
                 </p>
 
               </div>
